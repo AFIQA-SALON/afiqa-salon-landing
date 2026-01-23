@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://afiqa-salon.github.io/sitemap.xml
+Sitemap: https://www.google.com/search?q=https://afiqasalon.pages.dev/sitemap.xml
