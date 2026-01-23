@@ -1,27 +1,21 @@
 {
-  "name": "AFIQA SALON - Salon Kecantikan Premium Depok",
-  "short_name": "AFIQA SALON",
-  "description": "Salon kecantikan premium dengan layanan profesional untuk perawatan rambut, wajah, dan kuku di Depok",
+  "name": "AFIQA SALON by AERYN",
+  "short_name": "Afiqa Salon",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#667eea",
-  "theme_color": "#e91e63",
-  "orientation": "portrait",
+  "background_color": "#F3E8FF",
+  "theme_color": "#7A2BFF",
+  "description": "Salon kecantikan modern di Meruyung.",
   "icons": [
     {
-      "src": "/icon-192.png",
+      "src": "https://via.placeholder.com/192x192.png?text=AS", 
       "sizes": "192x192",
-      "type": "image/png",
-      "purpose": "any maskable"
+      "type": "image/png"
     },
     {
-      "src": "/icon-512.png",
+      "src": "https://via.placeholder.com/512x512.png?text=AS",
       "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "any maskable"
+      "type": "image/png"
     }
-  ],
-  "categories": ["lifestyle", "beauty", "business"],
-  "lang": "id",
-  "dir": "ltr"
+  ]
 }
