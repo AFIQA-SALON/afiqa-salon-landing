@@ -1,6 +1,6 @@
 # 🌸 AFIQA SALON - Landing Page & Appointment Booking System
 
-Landing page modern, interaktif, dan mudah dimengerti pelanggan untuk **AFIQA SALON by AERYN** (Meruyung, Depok).
+Landing page modern, interaktif, dan mudah dimengerti pelanggan untuk **AFIQA SALON** (Meruyung, Depok).
 
 Web ini didesain khusus dengan sistem **Reservasi & Konsultasi Langsung via Admin WhatsApp**. Karena di salon kecantikan kondisi rambut (panjang, ketebalan, dan riwayat perawatan) sangat menentukan penggunaan produk dan durasi pengerjaan, seluruh harga pada website difungsikan sebagai **tarif patokan/referensi**, dan seluruh booking diarahkan langsung ke WhatsApp resmi **0812 1418 4546** agar dicek serta dikonfirmasi secara akurat oleh admin & stylist.
 

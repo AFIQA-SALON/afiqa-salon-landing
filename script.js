@@ -923,7 +923,7 @@ function updateBookingUI() {
 
   if (totalDisplay) {
     totalDisplay.innerHTML = `
-      <div style="font-size: 1.05rem; color: #6B21A8; font-weight: 800;">${formattedTotal}</div>
+      <div style="font-size: 1.05rem; color: #065F46; font-weight: 800;">${formattedTotal}</div>
       <div style="font-size: 0.74rem; color: #B45309; font-weight: 600; margin-top: 2px;">
         💡 Patokan referensi (dicek langsung oleh stylist)
       </div>
@@ -1035,7 +1035,7 @@ function generateBookingMessage() {
 
   const tanggalFormatted = formatTanggalIndo(dateVal);
 
-  const message = `Halo Admin AFIQA SALON by AERYN, saya ingin reservasi jadwal dan konsultasi treatment rambut:\n\n` +
+  const message = `Halo Admin AFIQA SALON, saya ingin reservasi jadwal dan konsultasi treatment rambut:\n\n` +
     `👤 *Nama:* ${name}\n` +
     (phone ? `📱 *No. WhatsApp:* ${phone}\n` : "") +
     `📅 *Rencana Kedatangan:* ${tanggalFormatted}\n` +
@@ -1047,6 +1047,20 @@ function generateBookingMessage() {
     `Mohon info ketersediaan slot jadwal dan konfirmasi estimasi harganya ya Kak. (Saya juga bisa kirim foto rambut jika diperlukan). Terima kasih! ✨`;
 
   return message;
+}
+
+// QUICK HAIR TAGS FOR MOBILE
+function addHairTag(tag) {
+  const notesInput = document.getElementById("customer-notes");
+  if (!notesInput) return;
+  const currentText = notesInput.value.trim();
+  if (!currentText) {
+    notesInput.value = tag;
+  } else if (!currentText.toLowerCase().includes(tag.toLowerCase())) {
+    notesInput.value = `${currentText}, ${tag}`;
+  }
+  notesInput.dispatchEvent(new Event("input"));
+  notesInput.focus();
 }
 
 // KIRIM KE WHATSAPP
