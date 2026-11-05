@@ -1,329 +1,1127 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AFIQA SALON by AERYN | Salon Kecantikan Terbaik di Meruyung</title>
-    <meta name="description" content="Salon wanita modern di Meruyung, Depok. Spesialis hair spa, coloring, dan smoothing dengan harga terjangkau. Clean, higienis, dan nyaman. Booking via WA sekarang!">
-    <meta name="keywords" content="salon meruyung, salon depok, smoothing rambut depok, hair color depok, afiqa salon, aeryn salon">
-    <meta name="author" content="AFIQA SALON by AERYN">
-    <meta name="theme-color" content="#7A2BFF">
-    
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://afiqasalon.pages.dev/">
-    <meta property="og:title" content="AFIQA SALON by AERYN - Your Beauty Destination">
-    <meta property="og:description" content="Manjakan diri di salon paling aesthetic dan nyaman di Meruyung. Buka setiap hari 10.00 - 20.00.">
-    
-    <!-- Canonical (Ganti URL ini nanti dengan domain aslimu) -->
-    <link rel="canonical" href="https://afiqasalon.pages.dev/">
-    
-    <!-- Favicon & Manifest -->
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💇‍♀️</text></svg>">
-    <link rel="manifest" href="/manifest.webmanifest">
-    
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  
+  <title>AFIQA SALON by AERYN | Booking Appointment & Pricelist Resmi Meruyung Depok</title>
+  <meta name="description" content="Booking jadwal perawatan rambut & kecantikan di AFIQA SALON Meruyung Depok. Spesialis Hair Keratin Glass Hair, Smoothing Lembut, Balayage Coloring, Creambath Makarizo, Manicure Pedicure, dan Reflexy. Booking mudah via WhatsApp!">
+  <meta name="keywords" content="afiqa salon, salon meruyung, salon depok, booking salon depok, smoothing meruyung, keratin depok, creambath meruyung, balayage depok, hair salon limo depok">
+  <meta name="author" content="AFIQA SALON by AERYN">
+  <meta name="theme-color" content="#6B21A8">
+
+  <!-- Open Graph / Meta Sosial -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://afiqasalon.pages.dev/">
+  <meta property="og:title" content="AFIQA SALON by AERYN | Hair Studio & Beauty Care Meruyung Depok">
+  <meta property="og:description" content="Pricelist transparan dan sistem booking jadwal perawatan salon paling mudah. Klik untuk pilih treatment dan booking langsung via WhatsApp!">
+  <meta property="og:image" content="assets/pricelist_official.jpg">
+
+  <!-- Favicon & PWA -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💇‍♀️</text></svg>">
+  <link rel="manifest" href="manifest.webmanifest">
+
+  <!-- Google Fonts: Plus Jakarta Sans & Playfair Display -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Structured Data JSON-LD (Schema.org) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BeautySalon",
+    "name": "AFIQA SALON by AERYN",
+    "image": "assets/logo.png",
+    "telephone": "+6281214184546",
+    "url": "https://afiqasalon.pages.dev/",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Jl. Limo Raya Meruyung No.K15",
+      "addressLocality": "Limo, Meruyung, Kota Depok",
+      "addressRegion": "Jawa Barat",
+      "postalCode": "16515",
+      "addressCountry": "ID"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": -6.3768,
+      "longitude": 106.7725
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "opens": "10:00",
+      "closes": "20:00"
+    },
+    "priceRange": "Rp 15.000 - Rp 890.000",
+    "servesCuisine": "Hair Treatment, Hair Coloring, Smoothing, Keratin, Nail Care, Body Spa"
+  }
+  </script>
 </head>
 <body>
 
-    <!-- Navbar -->
-    <nav class="navbar">
-        <div class="container nav-container">
-            <a href="#" class="logo">AFIQA SALON <span class="sub-logo">by AERYN</span></a>
-            <button class="menu-toggle" aria-label="Buka Menu">
-                <span></span>
-                <span></span>
-                <span></span>
+  <!-- =======================================================================
+       1. TOP ANNOUNCEMENT BAR
+       ======================================================================= -->
+  <aside class="top-notice-bar" aria-label="Informasi Jam Buka">
+    <div class="container top-notice-inner">
+      <div id="salon-status-badge" class="status-badge open">
+        <span class="status-dot online"></span> <strong>Buka Sekarang</strong> • Tutup 20.00 WIB
+      </div>
+      <div class="top-contacts">
+        <a href="https://wa.me/6281214184546" target="_blank" rel="noopener" class="top-contact-link">
+          <span>💬 WA: 0812 1418 4546</span>
+        </a>
+        <span style="opacity: 0.4;">|</span>
+        <a href="https://instagram.com/afiqasalon" target="_blank" rel="noopener" class="top-contact-link">
+          <span>📸 @afiqasalon</span>
+        </a>
+        <span style="opacity: 0.4;">|</span>
+        <span>📍 Jl. Limo Raya Meruyung No.K15 Depok</span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- =======================================================================
+       2. MAIN NAVBAR
+       ======================================================================= -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#" class="brand-logo-wrap" aria-label="AFIQA SALON Beranda">
+        <img src="assets/logo.png" alt="Logo AFIQA SALON" class="brand-avatar" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><circle cx=%2250%22 cy=%2250%22 r=%2250%22 fill=%22%236B21A8%22/><text x=%2250%22 y=%2260%22 font-size=%2240%22 text-anchor=%22middle%22 fill=%22white%22 font-family=%22sans-serif%22 font-weight=%22bold%22>AS</text></svg>'">
+        <div class="brand-text">
+          <span class="brand-title">AFIQA SALON</span>
+          <span class="brand-subtitle">Hair & Beauty Studio</span>
+        </div>
+      </a>
+
+      <nav aria-label="Menu Navigasi Utama">
+        <ul class="nav-links">
+          <li><a href="#section-booking">Form Booking</a></li>
+          <li><a href="#section-pricelist">Pricelist Lengkap</a></li>
+          <li><a href="#section-keunggulan">Keunggulan</a></li>
+          <li><a href="#section-lokasi">Lokasi & Jam</a></li>
+          <li><a href="#section-faq">Tanya Jawab (FAQ)</a></li>
+          <li>
+            <a href="https://wa.me/6281214184546?text=Halo%20AFIQA%20SALON,%20saya%20ingin%20konsultasi%20layanan%20rambut" target="_blank" rel="noopener" class="nav-cta-btn">
+              💬 Chat Admin WA
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <button type="button" class="mobile-toggle-btn" aria-label="Buka Menu Navigasi" aria-expanded="false">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- =====================================================================
+         3. HERO SECTION
+         ===================================================================== -->
+    <section class="hero-section">
+      <div class="container hero-grid">
+        <div class="hero-content-col">
+          <div class="hero-badge-pill">
+            <span>✨ Salon Wanita Modern di Meruyung • Booking via WhatsApp</span>
+          </div>
+          <h1 class="hero-title">
+            Rambut Cantik & Sehat, <br>
+            <span class="highlight-text">Cek & Booking Langsung via WhatsApp</span>
+          </h1>
+          <p class="hero-description">
+            Pilih treatment favoritmu, tentukan jadwal, dan konsultasikan kondisi rambutmu langsung dengan Stylist & Admin AFIQA SALON via WhatsApp. Tarif perawatan disesuaikan dengan panjang dan ketebalan rambut secara jujur & transparan.
+          </p>
+
+          <div class="hero-action-buttons">
+            <button type="button" class="btn-primary-hero" onclick="scrollToElement('section-booking')">
+              <span>📅 Pilih Layanan & Konsultasi WA</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
             </button>
-            <ul class="nav-menu">
-                <li><a href="#layanan">Layanan</a></li>
-                <li><a href="#galeri">Galeri</a></li>
-                <li><a href="#testimoni">Testimoni</a></li>
-                <li><a href="#lokasi">Lokasi</a></li>
-                <li><a href="#faq">FAQ</a></li>
-                <li><a href="https://wa.me/6281214184546?text=Halo%20AFIQA%20SALON%20by%20AERYN,%20saya%20mau%20booking%20layanan..." target="_blank" class="btn-nav">Chat WhatsApp</a></li>
-            </ul>
-        </div>
-    </nav>
+            <a href="https://wa.me/6281214184546?text=Halo%20AFIQA%20SALON,%20saya%20mau%20konsultasi%20dan%20tanya%20jadwal%20tersedia" target="_blank" rel="noopener" class="btn-wa-hero">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="#25D366"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.882-4.434 9.885-9.885.002-2.641-1.026-5.124-2.895-6.995-1.868-1.869-4.35-2.899-6.99-2.899-5.451 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.75-.979z"/></svg>
+              <span>Chat WhatsApp</span>
+            </a>
+          </div>
 
-    <!-- Hero Section -->
-    <header class="hero">
-        <div class="container hero-content">
-            <span class="badge-pill">✨ New Bestie in Town!</span>
-            <h1>Rambut Badai, <br>Mood Seharian Oke!</h1>
-            <p>Manjakan dirimu dengan perawatan premium tanpa bikin dompet boncos. Stylist ramah, tempat nyaman, hasil maksimal.</p>
-            
-            <div class="trust-badges">
-                <div class="badge-item">✅ Higienis & Steril</div>
-                <div class="badge-item">💖 Stylist Ramah</div>
-                <div class="badge-item">💰 Harga Transparan</div>
+          <div class="hero-trust-row">
+            <div class="trust-item">
+              <span class="trust-icon">🧴</span>
+              <span>Produk Asli & Aman</span>
+            </div>
+            <div class="trust-item">
+              <span class="trust-icon">💳</span>
+              <span>Bisa QRIS / Transfer</span>
+            </div>
+            <div class="trust-item">
+              <span class="trust-icon">⭐</span>
+              <span>Stylist Berpengalaman</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Card Showcase Preview -->
+        <div class="hero-visual-col">
+          <div class="hero-card-preview">
+            <div class="hero-card-inner-header">
+              <span class="hero-quick-title">🌸 Menu Favorit Pelanggan</span>
+              <span class="badge-location-card">Meruyung, Depok</span>
             </div>
 
-            <div class="hero-buttons">
-                <a href="https://wa.me/6281214184546?text=Halo%20AFIQA%20SALON,%20saya%20mau%20booking..." class="btn btn-primary">Booking via WhatsApp</a>
-                <a href="#galeri" class="btn btn-outline">Lihat Galeri</a>
-            </div>
-        </div>
-        <!-- Abstract Background Shape -->
-        <div class="hero-shape"></div>
-    </header>
+            <div class="hero-menu-preview-list">
+              <div class="preview-item">
+                <div>
+                  <div class="preview-name">Haircut Butterfly / French Layer</div>
+                  <div class="preview-sub">Layer bervolume natural & flowy</div>
+                </div>
+                <div class="preview-price">Rp 69.000</div>
+              </div>
 
-    <!-- Layanan Section -->
-    <section id="layanan" class="section">
-        <div class="container">
-            <h2 class="section-title">Layanan Unggulan</h2>
-            <p class="section-subtitle">Pilih treatment favoritmu hari ini</p>
-            
-            <div class="grid-3">
-                <div class="card service-card">
-                    <div class="icon-box">🧖‍♀️</div>
-                    <h3>Hair Wash & Blow</h3>
-                    <p>Cuci rambut bersih tuntas plus styling blow variasi (natural/curly) bikin rambut bervolume.</p>
+              <div class="preview-item">
+                <div>
+                  <div class="preview-name">Creambath MAKARIZO Aroma</div>
+                  <div class="preview-sub">Pijat leher + wangi buah/coklat mewah</div>
                 </div>
-                <div class="card service-card">
-                    <div class="icon-box">💆‍♀️</div>
-                    <h3>Creambath Premium</h3>
-                    <p>Pijatan kepala & bahu yang bikin rileks, nutrisi mendalam untuk rambut kering & rontok.</p>
+                <div class="preview-price">Rp 79.000</div>
+              </div>
+
+              <div class="preview-item">
+                <div>
+                  <div class="preview-name">Keratin Smoothing Glass Hair</div>
+                  <div class="preview-sub">Lurus berkilau tahan lama tanpa lepek</div>
                 </div>
-                <div class="card service-card">
-                    <div class="icon-box">✨</div>
-                    <h3>Smoothing Sutra</h3>
-                    <p>Lurus natural, lembut, dan berkilau. Ucapkan selamat tinggal pada rambut singa!</p>
+                <div class="preview-price">Mulai Rp 439k</div>
+              </div>
+
+              <div class="preview-item">
+                <div>
+                  <div class="preview-name">Balayage / Highlight Mix</div>
+                  <div class="preview-sub">Gradasi warna modern kekinian</div>
                 </div>
-                <div class="card service-card">
-                    <div class="icon-box">🎨</div>
-                    <h3>Hair Color & Balayage</h3>
-                    <p>Warna fashion kekinian yang aman di kulit kepala. Tampil beda, tampil pede.</p>
-                </div>
-                <div class="card service-card">
-                    <div class="icon-box">🥑</div>
-                    <h3>Hair Mask Keratin</h3>
-                    <p>Perbaikan intensif untuk rambut rusak akibat catok atau bahan kimia.</p>
-                </div>
-                <div class="card service-card">
-                    <div class="icon-box">💅</div>
-                    <h3>Manicure & Pedicure</h3>
-                    <p>Perawatan kuku bersih dan cantik, siap untuk acara spesialmu.</p>
-                </div>
+                <div class="preview-price">Mulai Rp 270k</div>
+              </div>
             </div>
+
+            <button type="button" class="btn-full-pricelist-card" onclick="openPricelistModal()">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+              <span>Lihat Foto Lembar Pricelist Asli</span>
+            </button>
+          </div>
         </div>
+      </div>
     </section>
 
-    <!-- Galeri Section -->
-    <section id="galeri" class="section">
-        <div class="container">
-            <h2 class="section-title" style="margin-bottom: 0.5rem;">Galeri Hasil Salon</h2>
-            <p class="section-subtitle">Transformasi cantik bestie Afiqa Salon!</p>
-            
-            <div class="grid-3">
-                <!-- Gallery Item New 8: Highlight Violet -->
-                <div class="card" style="padding: 15px;">
-                    <img src="https://www.dropbox.com/scl/fi/x3fse1809inojt753k3mg/Highlight-violet-warna-rambut-untuk-kamu-yang-suka-tampil-anggun-modern-dan-classy-DM-un.jpg?rlkey=fkeeu6sradvlmoeugg1gchors&st=yut0lg2m&raw=1" alt="Hasil Highlight Violet" style="width: 100%; border-radius: 10px; margin-bottom: 15px; object-fit: cover;">
-                    <h3 style="font-size: 1.1rem; color: #7A2BFF; margin-bottom: 5px;">Highlight Violet</h3>
-                    <p style="font-size: 0.9rem; color: #666;">Tampil anggun, modern, dan classy dengan sentuhan warna violet. 💜✨</p>
-                </div>
-
-                <!-- Gallery Item New 7: Ash Grey Balayage -->
-                <div class="card" style="padding: 15px;">
-                    <img src="https://www.dropbox.com/scl/fi/pt6wq5h4jv4skzu51ros0/Sentuhan-ash-grey-balayage-hair-color-untuk-tampilan-modern-classy.-Booking-sekarang-di-Afiqa.jpg?rlkey=xzcoh3x76z1ruvzwqwnoqb5gn&st=mdpvgg40&raw=1" alt="Hasil Ash Grey Balayage" style="width: 100%; border-radius: 10px; margin-bottom: 15px; object-fit: cover;">
-                    <h3 style="font-size: 1.1rem; color: #7A2BFF; margin-bottom: 5px;">Ash Grey Balayage</h3>
-                    <p style="font-size: 0.9rem; color: #666;">Sentuhan modern & classy. Tampil beda dengan warna abu kekinian. ✨</p>
-                </div>
-
-                <!-- Gallery Item New 6: Brunette Brown Keratin -->
-                <div class="card" style="padding: 15px;">
-                    <img src="https://www.dropbox.com/scl/fi/wz4gps4l8qcu2ibroqya8/Brunette-brown-tone-with-keratin-treatment-for-extra-shine-soft-layer-haircut-hasil-rambut-leb.jpg?rlkey=qk6pgb756dadqr0v7x58l6ger&st=tzw82gbe&raw=1" alt="Hasil Brunette brown tone with keratin treatment" style="width: 100%; border-radius: 10px; margin-bottom: 15px; object-fit: cover;">
-                    <h3 style="font-size: 1.1rem; color: #7A2BFF; margin-bottom: 5px;">Brunette brown tone with keratin treatment</h3>
-                    <p style="font-size: 0.9rem; color: #666;">Extra shine with soft layer. Rambut lebih sehat & berkilau. ✨</p>
-                </div>
-
-                <!-- Gallery Item New 5: Ash Brown -->
-                <div class="card" style="padding: 15px;">
-                    <img src="https://www.dropbox.com/scl/fi/2mrfsfkgs76cr00grqhcn/Ash-brown-yang-lembut-bikin-look-makin-classy-Hair-glow-up-di-Afiqa-Salon-Depok-WhatsApp-08.jpg?rlkey=ppgi6d2tetlp5t78g3uf752zt&st=4bm3r4z6&raw=1" alt="Hasil Ash brown" style="width: 100%; border-radius: 10px; margin-bottom: 15px; object-fit: cover;">
-                    <h3 style="font-size: 1.1rem; color: #7A2BFF; margin-bottom: 5px;">Ash Brown</h3>
-                    <p style="font-size: 0.9rem; color: #666;">Warna lembut yang bikin look makin classy. ✨</p>
-                </div>
-
-                <!-- Gallery Item New 4: Medium Bob Smoothing -->
-                <div class="card" style="padding: 15px;">
-                    <img src="https://www.dropbox.com/scl/fi/q9vpgijvdb1au7ytzxhoq/Medium-bob-hair-cut-dan-smoothing-collagen-Look-fresh-rambut-super-lurus-dan-shiny-WhatsApp.jpg?rlkey=foz5ab482432v4zn14q6qtj7s&st=yzc56fzk&raw=1" alt="Hasil Medium bob hair cut dan smoothing collagen" style="width: 100%; border-radius: 10px; margin-bottom: 15px; object-fit: cover;">
-                    <h3 style="font-size: 1.1rem; color: #7A2BFF; margin-bottom: 5px;">Medium bob hair cut dan smoothing collagen</h3>
-                    <p style="font-size: 0.9rem; color: #666;">Look fresh! Rambut super lurus dan shiny. ✨</p>
-                </div>
-
-                <!-- Gallery Item New 3: Ash Blonde Balayage -->
-                <div class="card" style="padding: 15px;">
-                    <img src="https://www.dropbox.com/scl/fi/lehqfsj1n1rw3a82kvaph/Ash-blonde-balayage-yang-ringan-tapi-tetep-bikin-beda-Warnanya-adem-jatuhnya-natural-cocok-b.jpg?rlkey=tk1cnfyajav2bvltd6xof5pgb&st=8n9v334v&raw=1" alt="Hasil Ash blonde balayage" style="width: 100%; border-radius: 10px; margin-bottom: 15px; object-fit: cover;">
-                    <h3 style="font-size: 1.1rem; color: #7A2BFF; margin-bottom: 5px;">Ash Blonde Balayage</h3>
-                    <p style="font-size: 0.9rem; color: #666;">Ringan tapi tetap bikin beda. Warnanya adem, jatuhnya natural. ✨</p>
-                </div>
-
-                <!-- Gallery Item New 2: Balayage Milk Tea -->
-                <div class="card" style="padding: 15px;">
-                    <img src="https://www.dropbox.com/scl/fi/zused8e2z5j93pp29bi5c/Balayage-milk-tea-ash-blonde-hasilnya-halus-natural-WhatsApp-0812-1418-4546-Admin.jpg?rlkey=kz6nabhq6qx47kibu5al3whzl&st=lgftc0iq&raw=1" alt="Hasil Balayage milk tea ash blonde" style="width: 100%; border-radius: 10px; margin-bottom: 15px; object-fit: cover;">
-                    <h3 style="font-size: 1.1rem; color: #7A2BFF; margin-bottom: 5px;">Balayage milk tea ash blonde</h3>
-                    <p style="font-size: 0.9rem; color: #666;">Hasilnya halus & natural. ✨</p>
-                </div>
-
-                <!-- Gallery Item New: Mocha Ash Brown -->
-                <div class="card" style="padding: 15px;">
-                    <img src="https://www.dropbox.com/scl/fi/ee47o6e1p844intaveqnm/Mocha-ash-brown-balayage-yang-elegan-bikin-rambut-terlihat-lembut-natural-WhatsApp-081.jpg?rlkey=h6k2ppg47h3mg1kr2bjfz35bs&st=4zaicc5p&raw=1" alt="Hasil Mocha Ash Brown Balayage" style="width: 100%; border-radius: 10px; margin-bottom: 15px; object-fit: cover;">
-                    <h3 style="font-size: 1.1rem; color: #7A2BFF; margin-bottom: 5px;">Mocha Ash Brown Balayage</h3>
-                    <p style="font-size: 0.9rem; color: #666;">Warna elegan yang bikin rambut terlihat lembut & natural. 😍✨</p>
-                </div>
-
-            </div>
-
-            <div style="text-align: center; margin-top: 40px;">
-                <p style="margin-bottom: 15px; color: #666;">Mau konsultasi warna yang cocok buat kamu?</p>
-                <a href="https://wa.me/6281214184546?text=Halo%20Admin,%20mau%20konsultasi%20warna%20rambut..." target="_blank" class="btn btn-outline" style="margin-left: 0;">Chat Admin Sekarang 💬</a>
-            </div>
+    <!-- =====================================================================
+         4. INTERACTIVE BOOKING & CONSULTATION WIZARD
+         ===================================================================== -->
+    <section id="section-booking" class="booking-section">
+      <div class="container">
+        <div class="section-head-center">
+          <span class="section-pill-tag">Booking & Konsultasi WhatsApp Cepat</span>
+          <h2 class="section-main-title">Formulir Janji Temu & Konsultasi Rambut</h2>
+          <p class="section-sub-desc">
+            Pilih layanan yang kamu minati dan tentukan rencana jadwal. Karena setiap rambut memiliki panjang dan kondisi yang berbeda, harga pasti dan ketersediaan slot akan dikonfirmasi langsung oleh Admin via WhatsApp.
+          </p>
         </div>
-    </section>
 
-    <!-- Testimoni Section -->
-    <section id="testimoni" class="section bg-light">
-        <div class="container">
-            <h2 class="section-title">Kata Mereka</h2>
-            <div class="scrolling-wrapper">
-                <div class="card testimonial-card">
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p>"Suka banget sama hasil smoothingnya! Lembut parah dan ga bau obat. Tempatnya juga adem."</p>
-                    <strong>— Kak Dinda A.</strong>
-                </div>
-                <div class="card testimonial-card">
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p>"Baru nemu salon di Meruyung yang senyaman ini. Terapisnya mijitnya enak banget pas creambath."</p>
-                    <strong>— Bunda Rina</strong>
-                </div>
-                <div class="card testimonial-card">
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p>"Warnain rambut disini ga bikin kering. Stylist-nya ngerti banget warna yang cocok di kulit aku."</p>
-                    <strong>— Siska P.</strong>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Lokasi & Kontak -->
-    <section id="lokasi" class="section">
-        <div class="container">
-            <div class="grid-2 location-grid">
-                <div class="contact-info">
-                    <h2 class="section-title text-left">Kunjungi Kami</h2>
-                    <p class="address">
-                        <strong>📍 Alamat:</strong><br>
-                        Jl. Limo Raya Meruyung No.K15<br>
-                        Depok, Jawa Barat
-                    </p>
-                    <p class="hours">
-                        <strong>🕘 Jam Buka:</strong><br>
-                        Setiap Hari: 10.00 – 20.00 WIB
-                    </p>
-                    <div class="social-links">
-                        <a href="https://instagram.com/afiqasalon" target="_blank">Instagram: @afiqasalon</a>
-                        <a href="https://tiktok.com/@afiqasalon" target="_blank">TikTok: @afiqasalon</a>
-                    </div>
-                    <a href="https://wa.me/6281214184546" class="btn btn-primary mt-2">Chat WhatsApp Admin</a>
-                </div>
-                <div class="map-wrapper">
-                    <!-- Placeholder Maps iframe -->
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.176885698308!2d106.7725283!3d-6.3711317!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ef20e4b52479%3A0x6b00345091a0c8d9!2sJl.%20Raya%20Meruyung%2C%20Kota%20Depok%2C%20Jawa%20Barat!5e0!3m2!1sen!2sid!4v1700000000000!5m2!1sen!2sid" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Lokasi Afiqa Salon"></iframe>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FAQ Section -->
-    <section id="faq" class="section bg-light">
-        <div class="container narrow-container">
-            <h2 class="section-title">Sering Ditanyakan (FAQ)</h2>
-            
-            <details class="faq-item">
-                <summary>Apakah harus booking dulu sebelum datang?</summary>
-                <p>Kami sangat menyarankan untuk booking via WhatsApp agar kamu tidak perlu antre lama, terutama di akhir pekan.</p>
-            </details>
-            
-            <details class="faq-item">
-                <summary>Metode pembayaran apa saja yang tersedia?</summary>
-                <p>Kami menerima pembayaran Tunai (Cash), Transfer Bank, dan QRIS (GoPay, OVO, Dana, ShopeePay).</p>
-            </details>
-            
-            <details class="faq-item">
-                <summary>Berapa lama durasi treatment Smoothing?</summary>
-                <p>Smoothing biasanya memakan waktu 3 - 5 jam tergantung panjang dan ketebalan rambutmu.</p>
-            </details>
-            
-            <details class="faq-item">
-                <summary>Apakah ada garansi jika hasil tidak sesuai?</summary>
-                <p>Ya, kami memberikan garansi perbaikan maksimal 3 hari setelah treatment jika hasil tidak sesuai prosedur.</p>
-            </details>
-
-            <details class="faq-item">
-                <summary>Rambut rusak parah apakah boleh di-Coloring?</summary>
-                <p>Sebaiknya konsultasi dulu. Jika terlalu rusak, kami sarankan treatment Hair Mask atau Keratin dulu sebelum pewarnaan.</p>
-            </details>
-
-            <details class="faq-item">
-                <summary>Lokasi tepatnya di sebelah mana?</summary>
-                <p>Kami berada di Jl. Limo Raya Meruyung No.K15. Cek Google Maps di atas untuk titik pasnya!</p>
-            </details>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container footer-content">
-            <p><strong>AFIQA SALON by AERYN</strong></p>
-            <p>Jl. Limo Raya Meruyung No.K15</p>
+        <!-- Banner Edukasi Ketentuan Tarif Salon -->
+        <div class="consultation-alert-banner">
+          <div class="alert-icon">💡</div>
+          <div class="alert-content">
+            <h4>Ketentuan Tarif Perawatan Salon:</h4>
             <p>
-                <a href="https://wa.me/6281214184546">WhatsApp 0812 1418 4546</a> | 
-                <a href="https://instagram.com/afiqasalon">Instagram @afiqasalon</a> | 
-                <a href="https://tiktok.com/@afiqasalon">TikTok @afiqasalon</a>
+              Di salon kecantikan, tarif perawatan (seperti <em>smoothing, keratin glass hair, pewarnaan/balayage, potong layer, creambath, perm</em>) sangat dipengaruhi oleh <strong>panjang, ketebalan, dan kondisi kesehatan helai rambutmu</strong>. Tarif pada website ini adalah <strong>patokan referensi</strong>. Harga pasti & rekomendasi terbaik akan dicek langsung oleh stylist/admin via WhatsApp atau saat kedatangan di salon.
             </p>
-            <p class="copyright">&copy; <span id="year"></span> Afiqa Salon. All Rights Reserved.</p>
+          </div>
         </div>
-    </footer>
 
-    <!-- Floating WA Button -->
-    <a href="https://wa.me/6281214184546?text=Halo%20AFIQA%20SALON%20by%20AERYN,%20saya%20mau%20booking%20layanan..." class="floating-wa" target="_blank" aria-label="Chat WhatsApp">
-        <svg viewBox="0 0 24 24" width="32" height="32" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
-        <span>Chat Kami</span>
-    </a>
+        <!-- 3-Step Guide Indicators -->
+        <div class="steps-indicator-bar" aria-label="Tahapan Booking">
+          <div class="step-indicator-item active">
+            <div class="step-num-circle">1</div>
+            <div>
+              <div class="step-info-title">Pilih Layanan Diminati</div>
+              <div id="step-1-status" class="step-info-sub">Pilih minimal 1 treatment</div>
+            </div>
+          </div>
 
-    <!-- Structured Data (JSON-LD) -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "BeautySalon",
-      "name": "AFIQA SALON by AERYN",
-      "image": "https://afiqasalon.pages.dev/assets/logo-placeholder.jpg",
-      "telephone": "+6281214184546",
-      "url": "https://afiqasalon.pages.dev/",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Jl. Limo Raya Meruyung No.K15",
-        "addressLocality": "Depok",
-        "addressRegion": "Jawa Barat",
-        "addressCountry": "ID"
-      },
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday",
-          "Saturday",
-          "Sunday"
-        ],
-        "opens": "10:00",
-        "closes": "20:00"
-      },
-      "priceRange": "$$"
-    }
-    </script>
-    <script src="script.js"></script>
+          <div class="step-indicator-item active">
+            <div class="step-num-circle">2</div>
+            <div>
+              <div class="step-info-title">Pilih Jadwal & Jam</div>
+              <div class="step-info-sub">Buka setiap hari 10.00 - 20.00</div>
+            </div>
+          </div>
+
+          <div class="step-indicator-item active">
+            <div class="step-num-circle">3</div>
+            <div>
+              <div class="step-info-title">Konsultasi & Booking WA</div>
+              <div class="step-info-sub">Dicek & dikonfirmasi admin salon</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Main Booking Grid -->
+        <div class="booking-wizard-grid">
+          <!-- Left Column: Service Picker & Search -->
+          <div class="service-selection-col">
+            <!-- Category Tabs -->
+            <div class="category-filter-wrap">
+              <div class="category-tabs-scroll" role="tablist">
+                <button type="button" class="cat-tab-btn active" data-cat="all">Semua Layanan</button>
+                <button type="button" class="cat-tab-btn" data-cat="hair">Hair Cut & Styling</button>
+                <button type="button" class="cat-tab-btn" data-cat="treatment">Hair Treatment</button>
+                <button type="button" class="cat-tab-btn" data-cat="straightening">Smoothing & Keratin</button>
+                <button type="button" class="cat-tab-btn" data-cat="coloring">Hair Coloring</button>
+                <button type="button" class="cat-tab-btn" data-cat="wave">Wave & Perm</button>
+                <button type="button" class="cat-tab-btn" data-cat="nail">Nail Care</button>
+                <button type="button" class="cat-tab-btn" data-cat="face">Face & Eye Care</button>
+                <button type="button" class="cat-tab-btn" data-cat="spa">Body Spa & Reflexy</button>
+                <button type="button" class="cat-tab-btn" data-cat="makeup">Make Up</button>
+              </div>
+            </div>
+
+            <!-- Search Bar -->
+            <div class="search-input-box">
+              <svg class="search-icon-svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+              <input type="text" id="search-service-input" placeholder="Ketik nama treatment (misal: butterfly, creambath, keratin, catok, reflexy)..." aria-label="Cari treatment">
+            </div>
+
+            <!-- Dynamic Services Cards Grid -->
+            <div id="pricelist-items-container" class="services-selection-grid">
+              <!-- Rendered via JavaScript -->
+            </div>
+          </div>
+
+          <!-- Right Column: Interactive Booking Summary Panel -->
+          <div class="booking-summary-col">
+            <div class="booking-summary-panel">
+              <div class="summary-card-header">
+                <h3 class="summary-title">Rincian Rencana Kunjungan</h3>
+                <span class="summary-badge-step">Konsultasi Langsung</span>
+              </div>
+
+              <!-- List Treatment Terpilih -->
+              <div class="selected-chips-block">
+                <div class="selected-block-label">Layanan Yang Kamu Pilih:</div>
+                <div id="selected-services-list">
+                  <!-- Rendered dynamically -->
+                </div>
+              </div>
+
+              <!-- Form Tanggal & Jam -->
+              <div class="booking-form-group">
+                <label for="booking-date" class="form-label">📅 Rencana Tanggal Kedatangan:</label>
+                <input type="date" id="booking-date" class="form-input-text" required>
+              </div>
+
+              <div class="booking-form-group">
+                <label class="form-label">⏰ Pilih Jam Booking (10.00 - 20.00 WIB):</label>
+                <div id="time-slots-container" class="time-slots-grid">
+                  <!-- Time slots generated by script -->
+                </div>
+              </div>
+
+              <!-- Form Identitas Customer -->
+              <div class="booking-form-group">
+                <label for="customer-name" class="form-label">👤 Nama Pemesan (Wajib):</label>
+                <input type="text" id="customer-name" class="form-input-text" placeholder="Contoh: Kak Dinda / Kak Sarah" required>
+              </div>
+
+              <div class="booking-form-group">
+                <label for="customer-phone" class="form-label">📱 Nomor WhatsApp Anda:</label>
+                <input type="tel" id="customer-phone" class="form-input-text" placeholder="Contoh: 0812xxxxxxxx">
+              </div>
+
+              <div class="booking-form-group">
+                <label for="customer-notes" class="form-label">📝 Kondisi Rambut & Catatan Tambahan:</label>
+                <input type="text" id="customer-notes" class="form-input-text" placeholder="Contoh: Rambut sebahu agak tebal, pernah bleaching/smoothing, dll.">
+              </div>
+
+              <!-- Kotak Patokan Kisaran Tarif Referensi -->
+              <div class="total-estimate-box consultation-mode">
+                <div class="estimate-info-header">
+                  <span class="estimate-badge-pill">🔍 Kisaran Referensi</span>
+                  <div id="total-estimate-display" class="estimate-value-big">
+                    <span style="font-size: 0.95rem; color: #9CA3AF;">Pilih layanan</span>
+                  </div>
+                </div>
+                <p class="estimate-explanation">
+                  ⚠️ <em>Tarif di atas adalah patokan referensi. Biaya pasti akan diestimasi & dikonfirmasi langsung oleh stylist/admin sesuai kondisi, panjang & ketebalan rambutmu.</em>
+                </p>
+              </div>
+
+              <!-- Tombol Kirim WhatsApp -->
+              <button type="button" class="booking-submit-btn" onclick="sendBookingWhatsApp()">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.882-4.434 9.885-9.885.002-2.641-1.026-5.124-2.895-6.995-1.868-1.869-4.35-2.899-6.99-2.899-5.451 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.75-.979z"/></svg>
+                <span>💬 Chat Admin WA untuk Cek Harga & Jadwal</span>
+              </button>
+
+              <button type="button" class="copy-format-btn" onclick="copyBookingFormat()">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                <span>Salin Format Pesan Konsultasi</span>
+              </button>
+
+              <p class="summary-disclaimer">
+                💡 Seluruh booking appointment ditangani langsung oleh Admin AFIQA SALON di WhatsApp resmi: <strong>0812 1418 4546</strong> untuk memastikan slot dan estimasi biaya terbaik.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         5. OFFICIAL PRICELIST OVERVIEW (100% PERSIS SEPERTI FOTO BROSUR ASLI)
+         ===================================================================== -->
+    <section id="section-pricelist" class="official-pricelist-section">
+      <div class="container">
+        <!-- Banner Heading -->
+        <div class="pricelist-banner-card">
+          <div class="banner-pricelist-text">
+            <h3>Buku Menu & Daftar Tarif Referensi</h3>
+            <p>Seluruh tarif di bawah merupakan patokan resmi AFIQA SALON. Biaya final ditentukan setelah pengecekan langsung kondisi rambut oleh stylist di salon atau via WhatsApp.</p>
+          </div>
+          <button type="button" class="btn-view-original-photo" onclick="openPricelistModal()">
+            <span>🔍 Perbesar Foto Brosur Asli</span>
+          </button>
+        </div>
+
+        <!-- 2 Columns Layout Matching Physical Flyer -->
+        <div class="pricelist-flyer-grid">
+          <!-- KOLOM KIRI BROSUR -->
+          <div class="flyer-col">
+            <!-- HAIR -->
+            <div class="flyer-category-block">
+              <div class="flyer-cat-header">
+                <h3 class="flyer-cat-title">HAIR (Gunting & Styling)</h3>
+                <span class="flyer-cat-icon">✂️</span>
+              </div>
+              <table class="flyer-items-table">
+                <tbody>
+                  <tr>
+                    <td class="item-name-col">Children Bangs Trim</td>
+                    <td class="item-price-col">27k</td>
+                    <td class="item-action-col"><button type="button" class="btn-quick-add" title="Pilih Layanan" onclick="toggleServiceSelection('hair-01')">+</button></td>
+                  </tr>
+                  <tr>
+                    <td class="item-name-col">Curtain Bangs</td>
+                    <td class="item-price-col">39k</td>
+                    <td class="item-action-col"><button type="button" class="btn-quick-add" title="Pilih Layanan" onclick="toggleServiceSelection('hair-02')">+</button></td>
+                  </tr>
+                  <tr>
+                    <td class="item-name-col">Kid's Haircut (Rata)</td>
+                    <td class="item-price-col">45k</td>
+                    <td class="item-action-col"><button type="button" class="btn-quick-add" title="Pilih Layanan" onclick="toggleServiceSelection('hair-03')">+</button></td>
+                  </tr>
+                  <tr>
+                    <td class="item-name-col">Kid's Haircut Oval / Bob / Layer</td>
+                    <td class="item-price-col">49k</td>
+                    <td class="item-action-col"><button type="button" class="btn-quick-add" title="Pilih Layanan" onclick="toggleServiceSelection('hair-04')">+</button></td>
+                  </tr>
+                  <tr>
+                    <td class="item-name-col">Women's Haircut (Rata / Oval)</td>
+                    <td class="item-price-col">49k</td>
+                    <td class="item-action-col"><button type="button" class="btn-quick-add" title="Pilih Layanan" onclick="toggleServiceSelection('hair-05')">+</button></td>
+                  </tr>
+                  <tr>
+                    <td class="item-name-col">Hair Trimming</td>
+                    <td class="item-price-col">49k - 59k</td>
+                    <td class="item-action-col"><button type="button" class="btn-quick-add" title="Pilih Layanan" onclick="toggleServiceSelection('hair-06')">+</button></td>
+                  </tr>
+                  <tr>
+                    <td class="item-name-col">Haircut Butterfly / French Layer</td>
+                    <td class="item-price-col">69k</td>
+                    <td class="item-action-col"><button type="button" class="btn-quick-add" title="Pilih Layanan" onclick="toggleServiceSelection('hair-07')">+</button></td>
+                  </tr>
+                  <tr>
+                    <td class="item-name-col">Hairwash</td>
+                    <td class="item-price-col">15k - 49k</td>
+                    <td class="item-action-col"><button type="button" class="btn-quick-add" title="Pilih Layanan" onclick="toggleServiceSelection('hair-08')">+</button></td>
+                  </tr>
+                  <tr>
+                    <td class="item-name-col">Catok (Short, Medium)</td>
+                    <td class="item-price-col">49k - 57k</td>
+                    <td class="item-action-col"><button type="button" class="btn-quick-add" title="Pilih Layanan" onclick="toggleServiceSelection('hair-09')">+</button></td>
+                  </tr>
+                  <tr>
+                    <td class="item-name-col">Catok Long</td>
+                    <td class="item-price-col">59k - 69k</td>
+                    <td class="item-action-col"><button type="button" class="btn-quick-add" title="Pilih Layanan" onclick="toggleServiceSelection('hair-10')">+</button></td>
+                  </tr>
+                  <tr>
+                    <td class="item-name-col">Curly</td>
+                    <td class="item-price-col">59k - 79k</td>
+                    <td class="item-action-col"><button type="button" class="btn-quick-add" title="Pilih Layanan" onclick="toggleServiceSelection('hair-11')">+</button></td>
+                  </tr>
+                  <tr>
+                    <td class="item-name-col">Blow In</td>
+                    <td class="item-price-col">49k - 69k</td>
+                    <td class="item-action-col"><button type="button" class="btn-quick-add" title="Pilih Layanan" onclick="toggleServiceSelection('hair-12')">+</button></td>
+                  </tr>
+                  <tr>
+                    <td class="item-name-col">Blow Out / Variasi</td>
+                    <td class="item-price-col">79k</td>
+                    <td class="item-action-col"><button type="button" class="btn-quick-add" title="Pilih Layanan" onclick="toggleServiceSelection('hair-13')">+</button></td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="flyer-cat-note">
+                ℹ️ <em>Catatan: Untuk mendapatkan hasil optimal wajib wash + styling.</em>
+              </div>
+            </div>
+
+            <!-- HAIR COLORING -->
+            <div class="flyer-category-block" style="margin-top: 24px;">
+              <div class="flyer-cat-header">
+                <h3 class="flyer-cat-title">HAIR COLORING (Pewarnaan)</h3>
+                <span class="flyer-cat-icon">🎨</span>
+              </div>
+              <table class="flyer-items-table">
+                <tbody>
+                  <tr>
+                    <td class="item-name-col">Hair Toning</td>
+                    <td class="item-price-col">149k - 399k</td>
+                    <td class="item-action-col"><button type="button" class="btn-quick-add" onclick="toggleServiceSelection('col-01')">+</button></td>
+                  </tr>
+                  <tr>
+                    <td class="item-name-col">Peek A Boo / Hidden Color</td>
+                    <td class="item-price-col">170k - 490k</td>
+                    <td class="item-action-col"><button type="button" class="btn-quick-add" onclick="toggleServiceSelection('col-02')">+</button></td>
+                  </tr>
+                  <tr>
+                    <td class="item-name-col">Highlight</td>
+                    <td class="item-price-col">250k - 459k</td>
+                    <td class="item-action-col"><button type="button" class="btn-quick-add" onclick="toggleServiceSelection('col-03')">+</button></td>
+                  </tr>
+                  <tr>
+                    <td class="item-name-col">Bleaching</td>
+                    <td class="item-price-col">250k - 490k</td>
+                    <td class="item-action-col"><button type="button" class="btn-quick-add" onclick="toggleServiceSelection('col-04')">+</button></td>
+                  </tr>
+                  <tr>
+                    <td class="item-name-col">Balayage / Highlight Mix</td>
+                    <td class="item-price-col">270k - 490k</td>
+                    <td class="item-action-col"><button type="button" class="btn-quick-add" onclick="toggleServiceSelection('col-05')">+</button></td>
+                  </tr>
+                  <tr>
+                    <td class="item-name-col">Full Head Fashion Color</td>
+                    <td class="item-price-col">290k - 490k</td>
+                    <td class="item-action-col"><button type="button" class="btn-quick-add" onclick="toggleServiceSelection('col-06')">+</button></td>
+                  </tr>
+                  <tr>
+                    <td class="item-name-col">Basic Color</td>
+                    <td class="item-price-col">290k - 690k</td>
+                    <td class="item-action-col"><button type="button" class="btn-quick-add" onclick="toggleServiceSelection('col-07')">+</button></td>
+                  </tr>
+                  <tr>
+                    <td class="item-name-col">Extra Olaplex</td>
+                    <td class="item-price-col">75k</td>
+                    <td class="item-action-col"><button type="button" class="btn-quick-add" onclick="toggleServiceSelection('col-08')">+</button></td>
+                  </tr>
+                  <tr>
+                    <td class="item-name-col">Extra Smartplex</td>
+                    <td class="item-price-col">75k</td>
+                    <td class="item-action-col"><button type="button" class="btn-quick-add" onclick="toggleServiceSelection('col-09')">+</button></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <!-- WAVE PERMANENT, MAKE UP, EYEBROW, NAIL -->
+            <div class="flyer-category-block" style="margin-top: 24px;">
+              <div class="flyer-cat-header">
+                <h3 class="flyer-cat-title">WAVE, MAKE UP & NAIL</h3>
+                <span class="flyer-cat-icon">💅</span>
+              </div>
+              <table class="flyer-items-table">
+                <tbody>
+                  <tr><th colspan="3" style="text-align: left; padding: 6px 0; color: var(--primary); font-size: 0.8rem; text-transform: uppercase;">Wave Permanent</th></tr>
+                  <tr>
+                    <td class="item-name-col">Wave Permanent</td>
+                    <td class="item-price-col">200k - 500k</td>
+                    <td class="item-action-col"><button type="button" class="btn-quick-add" onclick="toggleServiceSelection('wave-01')">+</button></td>
+                  </tr>
+                  <tr>
+                    <td class="item-name-col">Down Perm</td>
+                    <td class="item-price-col">149k</td>
+                    <td class="item-action-col"><button type="button" class="btn-quick-add" onclick="toggleServiceSelection('wave-02')">+</button></td>
+                  </tr>
+                  <tr><th colspan="3" style="text-align: left; padding: 10px 0 6px; color: var(--primary); font-size: 0.8rem; text-transform: uppercase;">Make Up & Alis</th></tr>
+                  <tr>
+                    <td class="item-name-col">Make Up</td>
+                    <td class="item-price-col">150k - 449k</td>
+                    <td class="item-action-col"><button type="button" class="btn-quick-add" onclick="toggleServiceSelection('mu-01')">+</button></td>
+                  </tr>
+                  <tr>
+                    <td class="item-name-col">Hairdo</td>
+                    <td class="item-price-col">90k - 145k</td>
+                    <td class="item-action-col"><button type="button" class="btn-quick-add" onclick="toggleServiceSelection('mu-02')">+</button></td>
+                  </tr>
+                  <tr>
+                    <td class="item-name-col">Styling</td>
+                    <td class="item-price-col">85k - 100k</td>
+                    <td class="item-action-col"><button type="button" class="btn-quick-add" onclick="toggleServiceSelection('mu-03')">+</button></td>
+                  </tr>
+                  <tr>
+                    <td class="item-name-col">Brow Shaping</td>
+                    <td class="item-price-col">25k - 30k</td>
+                    <td class="item-action-col"><button type="button" class="btn-quick-add" onclick="toggleServiceSelection('face-06')">+</button></td>
+                  </tr>
+                  <tr><th colspan="3" style="text-align: left; padding: 10px 0 6px; color: var(--primary); font-size: 0.8rem; text-transform: uppercase;">Nail Care</th></tr>
+                  <tr>
+                    <td class="item-name-col">Manicure Express</td>
+                    <td class="item-price-col">39k</td>
+                    <td class="item-action-col"><button type="button" class="btn-quick-add" onclick="toggleServiceSelection('nail-01')">+</button></td>
+                  </tr>
+                  <tr>
+                    <td class="item-name-col">Manicure Regular</td>
+                    <td class="item-price-col">69k</td>
+                    <td class="item-action-col"><button type="button" class="btn-quick-add" onclick="toggleServiceSelection('nail-02')">+</button></td>
+                  </tr>
+                  <tr>
+                    <td class="item-name-col">Manicure Spa (Scrub + Garam)</td>
+                    <td class="item-price-col">79k</td>
+                    <td class="item-action-col"><button type="button" class="btn-quick-add" onclick="toggleServiceSelection('nail-03')">+</button></td>
+                  </tr>
+                  <tr>
+                    <td class="item-name-col">Pedicure Regular</td>
+                    <td class="item-price-col">79k</td>
+                    <td class="item-action-col"><button type="button" class="btn-quick-add" onclick="toggleServiceSelection('nail-04')">+</button></td>
+                  </tr>
+                  <tr>
+                    <td class="item-name-col">Pedicure Spa (Scrub + Garam)</td>
+                    <td class="item-price-col">89k</td>
+                    <td class="item-action-col"><button type="button" class="btn-quick-add" onclick="toggleServiceSelection('nail-05')">+</button></td>
+                  </tr>
+                  <tr>
+                    <td class="item-name-col">Gel Polish</td>
+                    <td class="item-price-col">99k</td>
+                    <td class="item-action-col"><button type="button" class="btn-quick-add" onclick="toggleServiceSelection('nail-06')">+</button></td>
+                  </tr>
+                  <tr>
+                    <td class="item-name-col">Nail Art (Per Jari)</td>
+                    <td class="item-price-col">3k - 20k</td>
+                    <td class="item-action-col"><button type="button" class="btn-quick-add" onclick="toggleServiceSelection('nail-07')">+</button></td>
+                  </tr>
+                  <tr>
+                    <td class="item-name-col">Nail Remove</td>
+                    <td class="item-price-col">5k - 15k</td>
+                    <td class="item-action-col"><button type="button" class="btn-quick-add" onclick="toggleServiceSelection('nail-08')">+</button></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- KOLOM KANAN BROSUR -->
+          <div class="flyer-col">
+            <!-- HAIR TREATMENT -->
+            <div class="flyer-category-block">
+              <div class="flyer-cat-header">
+                <h3 class="flyer-cat-title">HAIR TREATMENT (Perawatan)</h3>
+                <span class="flyer-cat-icon">💆‍♀️</span>
+              </div>
+              <table class="flyer-items-table">
+                <tbody>
+                  <tr>
+                    <td class="item-name-col">Creambath Tradisional (Alpukat/Ginseng/Lidah Buaya)</td>
+                    <td class="item-price-col">49k - 69k</td>
+                    <td class="item-action-col"><button type="button" class="btn-quick-add" onclick="toggleServiceSelection('treat-01')">+</button></td>
+                  </tr>
+                  <tr>
+                    <td class="item-name-col">Creambath Milk</td>
+                    <td class="item-price-col">69k</td>
+                    <td class="item-action-col"><button type="button" class="btn-quick-add" onclick="toggleServiceSelection('treat-02')">+</button></td>
+                  </tr>
+                  <tr>
+                    <td class="item-name-col">Creambath MAKARIZO (Coklat/Berry/Vanilla/Mint)</td>
+                    <td class="item-price-col">79k</td>
+                    <td class="item-action-col"><button type="button" class="btn-quick-add" onclick="toggleServiceSelection('treat-03')">+</button></td>
+                  </tr>
+                  <tr>
+                    <td class="item-name-col">Hairspa Anti Dandruff</td>
+                    <td class="item-price-col">85k</td>
+                    <td class="item-action-col"><button type="button" class="btn-quick-add" onclick="toggleServiceSelection('treat-04')">+</button></td>
+                  </tr>
+                  <tr>
+                    <td class="item-name-col">Hairmask Deep Repair</td>
+                    <td class="item-price-col">89k</td>
+                    <td class="item-action-col"><button type="button" class="btn-quick-add" onclick="toggleServiceSelection('treat-05')">+</button></td>
+                  </tr>
+                  <tr>
+                    <td class="item-name-col">Hairmask Color Lock</td>
+                    <td class="item-price-col">90k</td>
+                    <td class="item-action-col"><button type="button" class="btn-quick-add" onclick="toggleServiceSelection('treat-06')">+</button></td>
+                  </tr>
+                  <tr>
+                    <td class="item-name-col">Hairspa L'OREAL Professional</td>
+                    <td class="item-price-col">89k</td>
+                    <td class="item-action-col"><button type="button" class="btn-quick-add" onclick="toggleServiceSelection('treat-07')">+</button></td>
+                  </tr>
+                  <tr>
+                    <td class="item-name-col">Hairmask Keratin Booster</td>
+                    <td class="item-price-col">89k</td>
+                    <td class="item-action-col"><button type="button" class="btn-quick-add" onclick="toggleServiceSelection('treat-08')">+</button></td>
+                  </tr>
+                  <tr>
+                    <td class="item-name-col">Hair Serum</td>
+                    <td class="item-price-col">25k - 49k</td>
+                    <td class="item-action-col"><button type="button" class="btn-quick-add" onclick="toggleServiceSelection('treat-09')">+</button></td>
+                  </tr>
+                  <tr>
+                    <td class="item-name-col">Hair Tonic</td>
+                    <td class="item-price-col">25k - 30k</td>
+                    <td class="item-action-col"><button type="button" class="btn-quick-add" onclick="toggleServiceSelection('treat-10')">+</button></td>
+                  </tr>
+                  <tr>
+                    <td class="item-name-col">Hair Scrub Kulit Kepala</td>
+                    <td class="item-price-col">49k</td>
+                    <td class="item-action-col"><button type="button" class="btn-quick-add" onclick="toggleServiceSelection('treat-11')">+</button></td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="flyer-cat-note">
+                ℹ️ <em>Extra charge 15k - 29k untuk rambut tebal / extra long.</em>
+              </div>
+            </div>
+
+            <!-- HAIR STRAIGHTENING & KERATIN -->
+            <div class="flyer-category-block" style="margin-top: 24px;">
+              <div class="flyer-cat-header">
+                <h3 class="flyer-cat-title">HAIR STRAIGHTENING (Pelurusan)</h3>
+                <span class="flyer-cat-icon">✨</span>
+              </div>
+              <table class="flyer-items-table">
+                <tbody>
+                  <tr>
+                    <td class="item-name-col">Smoothing Matrix</td>
+                    <td class="item-price-col">295k - 490k</td>
+                    <td class="item-action-col"><button type="button" class="btn-quick-add" onclick="toggleServiceSelection('str-01')">+</button></td>
+                  </tr>
+                  <tr>
+                    <td class="item-name-col">Smoothing Diamond</td>
+                    <td class="item-price-col">349k - 590k</td>
+                    <td class="item-action-col"><button type="button" class="btn-quick-add" onclick="toggleServiceSelection('str-02')">+</button></td>
+                  </tr>
+                  <tr>
+                    <td class="item-name-col">Smoothing Collagen</td>
+                    <td class="item-price-col">369k - 690k</td>
+                    <td class="item-action-col"><button type="button" class="btn-quick-add" onclick="toggleServiceSelection('str-03')">+</button></td>
+                  </tr>
+                  <tr>
+                    <td class="item-name-col">Keratin Smoothing (Glass Hair)</td>
+                    <td class="item-price-col">439k - 890k</td>
+                    <td class="item-action-col"><button type="button" class="btn-quick-add" onclick="toggleServiceSelection('str-04')">+</button></td>
+                  </tr>
+                  <tr>
+                    <td class="item-name-col">Keratin Filler</td>
+                    <td class="item-price-col">390k - 790k</td>
+                    <td class="item-action-col"><button type="button" class="btn-quick-add" onclick="toggleServiceSelection('str-05')">+</button></td>
+                  </tr>
+                  <tr>
+                    <td class="item-name-col">Keratin Filler Therapy</td>
+                    <td class="item-price-col">390k - 890k</td>
+                    <td class="item-action-col"><button type="button" class="btn-quick-add" onclick="toggleServiceSelection('str-06')">+</button></td>
+                  </tr>
+                  <tr>
+                    <td class="item-name-col">Keratin Treatment Deep</td>
+                    <td class="item-price-col">449k - 890k</td>
+                    <td class="item-action-col"><button type="button" class="btn-quick-add" onclick="toggleServiceSelection('str-07')">+</button></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <!-- EXTENSION, FACE SPA & BODY SPA -->
+            <div class="flyer-category-block" style="margin-top: 24px;">
+              <div class="flyer-cat-header">
+                <h3 class="flyer-cat-title">EXTENSION, FACE & BODY SPA</h3>
+                <span class="flyer-cat-icon">🌸</span>
+              </div>
+              <table class="flyer-items-table">
+                <tbody>
+                  <tr><th colspan="3" style="text-align: left; padding: 6px 0; color: var(--primary); font-size: 0.8rem; text-transform: uppercase;">Hair Extension</th></tr>
+                  <tr>
+                    <td class="item-name-col">Extension (Per Helai)</td>
+                    <td class="item-price-col">7k - 10k</td>
+                    <td class="item-action-col"><button type="button" class="btn-quick-add" onclick="toggleServiceSelection('ext-01')">+</button></td>
+                  </tr>
+                  <tr>
+                    <td class="item-name-col">Pasang Ring</td>
+                    <td class="item-price-col">490k</td>
+                    <td class="item-action-col"><button type="button" class="btn-quick-add" onclick="toggleServiceSelection('ext-02')">+</button></td>
+                  </tr>
+                  <tr>
+                    <td class="item-name-col">Pasang Kepang</td>
+                    <td class="item-price-col">690k</td>
+                    <td class="item-action-col"><button type="button" class="btn-quick-add" onclick="toggleServiceSelection('ext-03')">+</button></td>
+                  </tr>
+                  <tr>
+                    <td class="item-name-col">Remove Extension</td>
+                    <td class="item-price-col">2k - 4k</td>
+                    <td class="item-action-col"><button type="button" class="btn-quick-add" onclick="toggleServiceSelection('ext-04')">+</button></td>
+                  </tr>
+                  <tr><th colspan="3" style="text-align: left; padding: 10px 0 6px; color: var(--primary); font-size: 0.8rem; text-transform: uppercase;">Face Spa & Masker</th></tr>
+                  <tr>
+                    <td class="item-name-col">Therapy Mata</td>
+                    <td class="item-price-col">35k</td>
+                    <td class="item-action-col"><button type="button" class="btn-quick-add" onclick="toggleServiceSelection('face-01')">+</button></td>
+                  </tr>
+                  <tr>
+                    <td class="item-name-col">Cleansing, Face Scrub, Masker</td>
+                    <td class="item-price-col">89k</td>
+                    <td class="item-action-col"><button type="button" class="btn-quick-add" onclick="toggleServiceSelection('face-02')">+</button></td>
+                  </tr>
+                  <tr>
+                    <td class="item-name-col">Extra Masker Vitamin C</td>
+                    <td class="item-price-col">25k</td>
+                    <td class="item-action-col"><button type="button" class="btn-quick-add" onclick="toggleServiceSelection('face-03')">+</button></td>
+                  </tr>
+                  <tr>
+                    <td class="item-name-col">Extra Masker Anti Aging</td>
+                    <td class="item-price-col">27k</td>
+                    <td class="item-action-col"><button type="button" class="btn-quick-add" onclick="toggleServiceSelection('face-04')">+</button></td>
+                  </tr>
+                  <tr>
+                    <td class="item-name-col">Extra Eye Mask</td>
+                    <td class="item-price-col">35k</td>
+                    <td class="item-action-col"><button type="button" class="btn-quick-add" onclick="toggleServiceSelection('face-05')">+</button></td>
+                  </tr>
+                  <tr><th colspan="3" style="text-align: left; padding: 10px 0 6px; color: var(--primary); font-size: 0.8rem; text-transform: uppercase;">Body Spa & Reflexy</th></tr>
+                  <tr>
+                    <td class="item-name-col">Back Massage (Punggung)</td>
+                    <td class="item-price-col">59k</td>
+                    <td class="item-action-col"><button type="button" class="btn-quick-add" onclick="toggleServiceSelection('body-01')">+</button></td>
+                  </tr>
+                  <tr>
+                    <td class="item-name-col">Kerik Tradisional</td>
+                    <td class="item-price-col">69k</td>
+                    <td class="item-action-col"><button type="button" class="btn-quick-add" onclick="toggleServiceSelection('body-02')">+</button></td>
+                  </tr>
+                  <tr>
+                    <td class="item-name-col">Foot Spa</td>
+                    <td class="item-price-col">99k</td>
+                    <td class="item-action-col"><button type="button" class="btn-quick-add" onclick="toggleServiceSelection('body-03')">+</button></td>
+                  </tr>
+                  <tr>
+                    <td class="item-name-col">Foot Spa Complete</td>
+                    <td class="item-price-col">149k</td>
+                    <td class="item-action-col"><button type="button" class="btn-quick-add" onclick="toggleServiceSelection('body-04')">+</button></td>
+                  </tr>
+                  <tr>
+                    <td class="item-name-col">Reflexy Kaki</td>
+                    <td class="item-price-col">99k</td>
+                    <td class="item-action-col"><button type="button" class="btn-quick-add" onclick="toggleServiceSelection('body-05')">+</button></td>
+                  </tr>
+                  <tr>
+                    <td class="item-name-col">Reflexy Full Body</td>
+                    <td class="item-price-col">189k</td>
+                    <td class="item-action-col"><button type="button" class="btn-quick-add" onclick="toggleServiceSelection('body-06')">+</button></td>
+                  </tr>
+                  <tr>
+                    <td class="item-name-col">Body Scrub (Lulur)</td>
+                    <td class="item-price-col">30k - 69k</td>
+                    <td class="item-action-col"><button type="button" class="btn-quick-add" onclick="toggleServiceSelection('body-07')">+</button></td>
+                  </tr>
+                  <tr>
+                    <td class="item-name-col">Body Mask</td>
+                    <td class="item-price-col">29k - 49k</td>
+                    <td class="item-action-col"><button type="button" class="btn-quick-add" onclick="toggleServiceSelection('body-08')">+</button></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 30px;">
+          <button type="button" class="btn-primary-hero" onclick="scrollToElement('section-booking')">
+            <span>↑ Naik ke Form & Booking Sekarang</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         6. KEUNGGULAN & ALASAN MEMILIH AFIQA SALON
+         ===================================================================== -->
+    <section id="section-keunggulan" class="features-section">
+      <div class="container">
+        <div class="section-head-center">
+          <span class="section-pill-tag">Kenyamanan Pelanggan Adalah Prioritas</span>
+          <h2 class="section-main-title">Mengapa Memilih AFIQA SALON?</h2>
+          <p class="section-sub-desc">Kami selalu mengedepankan kualitas hasil, kebersihan alat, dan keramahan pelayanan.</p>
+        </div>
+
+        <div class="feature-cards-grid">
+          <div class="feature-box">
+            <div class="feature-icon-circle">🧴</div>
+            <h4>Produk Original Terpercaya</h4>
+            <p>Menggunakan brand profesional ternama seperti Makarizo, L'Oréal Paris, Matrix, Olaplex, dan bahan herbal alami.</p>
+          </div>
+
+          <div class="feature-box">
+            <div class="feature-icon-circle">✂️</div>
+            <h4>Stylist Telaten & Ramah</h4>
+            <p>Stylist kami siap mendengarkan keinginanmu dan memberikan konsultasi potongan atau warna rambut yang pas dengan bentuk wajah.</p>
+          </div>
+
+          <div class="feature-box">
+            <div class="feature-icon-circle">✨</div>
+            <h4>Tempat Bersih & Nyaman</h4>
+            <p>Ruangan sejuk ber-AC, wangi aromaterapi relaksasi, alat steril, dan suasana tenang yang bikin betah berlama-lama.</p>
+          </div>
+
+          <div class="feature-box">
+            <div class="feature-icon-circle">💰</div>
+            <h4>Harga Terjangkau & Transparan</h4>
+            <p>Daftar harga terbuka tanpa biaya tersembunyi. Kamu bisa tahu estimasi biaya sebelum treatment dimulai.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         7. LOKASI, ALAMAT & GOOGLE MAPS
+         ===================================================================== -->
+    <section id="section-lokasi" class="location-section">
+      <div class="container">
+        <div class="location-grid">
+          <div class="location-info-card">
+            <span class="section-pill-tag">Kunjungi Salon Kami</span>
+            <h3>Lokasi Mudah Dijangkau di Meruyung, Depok</h3>
+            
+            <div class="loc-detail-row">
+              <span class="loc-icon">📍</span>
+              <div>
+                <div class="loc-label">Alamat Lengkap</div>
+                <div class="loc-value">Jl. Limo raya meruyung No.K15, Meruyung, Kec. Limo, Kota Depok, Jawa Barat 16515</div>
+              </div>
+            </div>
+
+            <div class="loc-detail-row">
+              <span class="loc-icon">🕘</span>
+              <div>
+                <div class="loc-label">Jam Operasional</div>
+                <div class="loc-value">Buka Setiap Hari (Senin – Minggu): 10.00 – 20.00 WIB</div>
+              </div>
+            </div>
+
+            <div class="loc-detail-row">
+              <span class="loc-icon">💬</span>
+              <div>
+                <div class="loc-label">WhatsApp Reservasi</div>
+                <div class="loc-value">0812 1418 4546 (Fast Response)</div>
+              </div>
+            </div>
+
+            <div class="loc-detail-row">
+              <span class="loc-icon">💳</span>
+              <div>
+                <div class="loc-label">Metode Pembayaran</div>
+                <div class="loc-value">QRIS (GoPay, OVO, ShopeePay, Dana), Transfer Bank, dan Tunai (Cash)</div>
+              </div>
+            </div>
+
+            <a href="https://maps.google.com/?q=Jl.+Limo+raya+meruyung+No.K15+Depok" target="_blank" rel="noopener" class="btn-open-gmaps">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"></polygon><line x1="8" y1="2" x2="8" y2="18"></line><line x1="16" y1="6" x2="16" y2="22"></line></svg>
+              <span>Buka Petunjuk Arah di Google Maps</span>
+            </a>
+          </div>
+
+          <div class="map-embed-wrapper">
+            <iframe 
+              title="Peta Lokasi AFIQA SALON Meruyung Depok"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15860.893264639912!2d106.76451000000001!3d-6.3651167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69efd1e9f1a26d%3A0x6b10ab877a3d9bc!2sMeruyung%2C%20Limo%2C%20Depok%20City%2C%20West%20Java!5e0!3m2!1sen!2sid!4v1700000000000!5m2!1sen!2sid" 
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         8. FAQ (PERTANYAAN SERING DIAJUKAN)
+         ===================================================================== -->
+    <section id="section-faq" class="faq-section">
+      <div class="container">
+        <div class="section-head-center">
+          <span class="section-pill-tag">Bantuan & Informasi</span>
+          <h2 class="section-main-title">Pertanyaan yang Sering Diajukan</h2>
+          <p class="section-sub-desc">Semua yang perlu kamu ketahui sebelum berkunjung ke AFIQA SALON.</p>
+        </div>
+
+        <div class="faq-list">
+          <div class="faq-item active">
+            <button type="button" class="faq-question">
+              <span>Mengapa harga perawatan salon perlu dicek langsung / via Admin WhatsApp?</span>
+              <span class="faq-arrow">▼</span>
+            </button>
+            <div class="faq-answer">
+              Karena setiap rambut memiliki karakteristik yang berbeda-beda. Kebutuhan formula obat, produk pelindung, dan durasi pengerjaan (seperti pada <em>smoothing, keratin, coloring, balayage, perm</em>) sangat bergantung pada <strong>panjang rambut, ketebalan, dan kondisi kesehatan helai rambutmu</strong> (misal rambut virgin vs rambut pernah bleaching/catok rutin). Oleh sebab itu, tarif di website adalah <strong>patokan referensi</strong>, dan harga pasti akan diestimasi dengan jujur & transparan oleh Stylist / Admin via WhatsApp setelah melihat foto rambut atau pengecekan langsung saat kedatangan.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" class="faq-question">
+              <span>Apakah saya bisa kirim foto rambut terlebih dahulu via WhatsApp?</span>
+              <span class="faq-arrow">▼</span>
+            </button>
+            <div class="faq-answer">
+              Bisa banget! Kamu dipersilakan mengirimkan foto rambut tampak belakang atau samping ke nomor WhatsApp resmi kami di <strong>0812 1418 4546</strong>. Admin dan stylist kami akan dengan senang hati memeriksa dan memberikan estimasi kisaran biaya serta saran treatment terbaik sebelum kamu datang.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" class="faq-question">
+              <span>Apakah harus booking terlebih dahulu sebelum datang?</span>
+              <span class="faq-arrow">▼</span>
+            </button>
+            <div class="faq-answer">
+              Sangat kami sarankan untuk booking via WhatsApp terlebih dahulu agar kamu mendapatkan slot antrean pasti dan tidak perlu menunggu lama, terutama di jam sibuk atau akhir pekan. Namun, kami juga tetap melayani walk-in jika slot terapis masih tersedia.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" class="faq-question">
+              <span>Berapa lama durasi pengerjaan Smoothing atau Keratin?</span>
+              <span class="faq-arrow">▼</span>
+            </button>
+            <div class="faq-answer">
+              Treatment pelurusan seperti Smoothing atau Keratin Treatment umumnya memakan waktu sekitar 3 hingga 5 jam, tergantung panjang, volume ketebalan, dan kondisi tekstur rambut aslimu.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" class="faq-question">
+              <span>Apakah boleh konsultasi warna rambut terlebih dahulu?</span>
+              <span class="faq-arrow">▼</span>
+            </button>
+            <div class="faq-answer">
+              Tentu boleh sekali! Konsultasi di AFIQA SALON 100% gratis. Stylist kami akan memeriksa kondisi rambutmu terlebih dahulu apakah memerlukan bleaching, toning, atau tambahan Olaplex agar rambut tetap sehat kuat.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" class="faq-question">
+              <span>Apakah harga di pricelist sudah termasuk cuci rambut (hairwash)?</span>
+              <span class="faq-arrow">▼</span>
+            </button>
+            <div class="faq-answer">
+              Sesuai catatan resmi pada menu, sebagian besar tarif gunting & styling adalah exclude hairwash. Biaya hairwash mulai dari Rp 15.000 - 49.000 dengan pijatan ringan menyegarkan.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" class="faq-question">
+              <span>Metode pembayaran apa saja yang diterima?</span>
+              <span class="faq-arrow">▼</span>
+            </button>
+            <div class="faq-answer">
+              Kami menerima Tunai (Cash), Transfer Rekening Bank, dan scan QRIS (GoPay, OVO, Dana, LinkAja, ShopeePay, serta mobile banking semua bank).
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =======================================================================
+       9. FOOTER
+       ======================================================================= -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h4>AFIQA SALON by AERYN</h4>
+          <p>
+            Hair Studio & Beauty Care terpercaya di Meruyung, Depok. Menyediakan aneka layanan perawatan rambut, pewarnaan, smoothing, creambath, nail art, face spa, dan reflexy berkualitas dengan harga transparan.
+          </p>
+          <div class="footer-social-links">
+            <a href="https://instagram.com/afiqasalon" target="_blank" rel="noopener" class="social-circle-link" title="Instagram @afiqasalon">📸</a>
+            <a href="https://tiktok.com/@afiqasalon" target="_blank" rel="noopener" class="social-circle-link" title="TikTok @afiqasalon">🎵</a>
+            <a href="https://wa.me/6281214184546" target="_blank" rel="noopener" class="social-circle-link" title="WhatsApp 0812 1418 4546">💬</a>
+          </div>
+        </div>
+
+        <div class="footer-links-col">
+          <h5>Layanan Populer</h5>
+          <ul>
+            <li><a href="#section-booking" onclick="activeCategory='straightening'; renderPricelist();">Keratin Glass Hair</a></li>
+            <li><a href="#section-booking" onclick="activeCategory='treatment'; renderPricelist();">Creambath Makarizo</a></li>
+            <li><a href="#section-booking" onclick="activeCategory='hair'; renderPricelist();">Haircut French Layer</a></li>
+            <li><a href="#section-booking" onclick="activeCategory='coloring'; renderPricelist();">Balayage & Highlight</a></li>
+            <li><a href="#section-booking" onclick="activeCategory='nail'; renderPricelist();">Manicure Pedicure Spa</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-col">
+          <h5>Kontak & Info</h5>
+          <ul>
+            <li>📍 Jl. Limo raya meruyung No.K15 Depok</li>
+            <li>🕘 Setiap Hari: 10.00 – 20.00 WIB</li>
+            <li>📱 WhatsApp: 0812 1418 4546</li>
+            <li>📸 IG: @afiqasalon</li>
+            <li>🎵 TikTok: @afiqasalon</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom-copy">
+        <p>© 2026 AFIQA SALON by AERYN. Hak Cipta Dilindungi Undang-Undang.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =======================================================================
+       10. FLOATING BAR (KHUSUS TAMPILAN SMARTPHONE)
+       ======================================================================= -->
+  <div id="floating-booking-bar" class="floating-booking-bar" aria-live="polite">
+    <div class="floating-summary-text">
+      <span id="floating-count" class="floating-count-badge">0 Layanan Diminati</span>
+      <span id="floating-total" class="floating-price-total">Cek Harga & Jadwal via WA 💬</span>
+    </div>
+    <button type="button" class="btn-floating-cta" onclick="scrollToElement('section-booking')">
+      <span>Konsultasi WA →</span>
+    </button>
+  </div>
+
+  <!-- =======================================================================
+       11. MODAL PREVIEW FOTO PRICELIST ASLI
+       ======================================================================= -->
+  <div id="pricelist-modal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modal-pricelist-title">
+    <div class="modal-content-box">
+      <div class="modal-header">
+        <h4 id="modal-pricelist-title">Foto Brosur Pricelist Resmi AFIQA SALON</h4>
+        <button type="button" class="modal-close-btn" onclick="closePricelistModal()" aria-label="Tutup Modal">✕</button>
+      </div>
+      <div class="modal-body-scroll">
+        <img src="assets/pricelist_official.jpg" alt="Pricelist Asli AFIQA SALON" loading="lazy">
+      </div>
+    </div>
+  </div>
+
+  <!-- Script JS Interaktif -->
+  <script src="script.js"></script>
 </body>
 </html>
