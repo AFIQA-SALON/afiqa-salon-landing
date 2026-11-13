@@ -2041,4 +2041,4 @@ html {
   .services-selection-grid {
     grid-template-columns: 1fr;
   }
-}
+  .category-tabs-scroll { flex-wrap: wrap; overflow-x: visible; } .cat-tab-btn { white-space: normal; flex-shrink: 1; } .quick-tags-scroll { flex-wrap: wrap; overflow-x: visible; } .quick-tag-btn { white-space: normal; flex-shrink: 1; } }
