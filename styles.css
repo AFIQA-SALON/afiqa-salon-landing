@@ -2019,3 +2019,26 @@ img {
     gap: 12px !important;
   }
 }
+/* Perbaikan overflow di HP kecil */
+html {
+  overflow-x: hidden;
+}
+
+@media (max-width: 480px) {
+  .hero-trust-row {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .hero-title {
+    font-size: 1.8rem;
+  }
+
+  .feature-cards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .services-selection-grid {
+    grid-template-columns: 1fr;
+  }
+}
