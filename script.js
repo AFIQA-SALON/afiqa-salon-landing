@@ -1223,8 +1223,4 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Set default sample selection jika customer baru datang agar langsung paham fiturnya
-  // Misal: Haircut Butterfly + Creambath Makarizo
-  toggleServiceSelection("hair-07"); // Butterfly Haircut
-  toggleServiceSelection("treat-03"); // Creambath Makarizo
 });
