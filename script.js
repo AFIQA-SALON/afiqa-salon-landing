@@ -1,11 +1,11 @@
 /**
- * AFIQA SALON - Official Appointment Booking & Pricelist Script
+ * AFIQA SALON - Official Appointment Booking Script
  * WhatsApp: 0812 1418 4546
  * Lokasi: Jl. Limo raya meruyung No.K15 Depok
  * Jam: 10.00 - 20.00 WIB
  */
 
-// Data Layanan Lengkap Sesuai Pricelist Resmi AFIQA SALON
+// Data Layanan Lengkap AFIQA SALON
 const SALON_SERVICES = [
   // --- HAIR CUT & STYLING ---
   {
@@ -13,9 +13,9 @@ const SALON_SERVICES = [
     category: "hair",
     categoryName: "Hair Cut & Styling",
     name: "Children Bangs Trim",
-    priceText: "Rp 27.000",
-    priceVal: 27000,
-    unit: "pengerjaan",
+
+
+
     desc: "Rapikan poni anak agar rapi dan nyaman beraktivitas."
   },
   {
@@ -23,8 +23,8 @@ const SALON_SERVICES = [
     category: "hair",
     categoryName: "Hair Cut & Styling",
     name: "Curtain Bangs",
-    priceText: "Rp 39.000",
-    priceVal: 39000,
+
+
     popular: true,
     desc: "Poni tirai kekinian membingkai wajah lebih tirus dan manis."
   },
@@ -33,8 +33,8 @@ const SALON_SERVICES = [
     category: "hair",
     categoryName: "Hair Cut & Styling",
     name: "Kid's Haircut (Rata)",
-    priceText: "Rp 45.000",
-    priceVal: 45000,
+
+
     desc: "Gunting rambut anak model rata rapi & presisi."
   },
   {
@@ -42,8 +42,8 @@ const SALON_SERVICES = [
     category: "hair",
     categoryName: "Hair Cut & Styling",
     name: "Kid's Haircut Oval / Bob / Layer",
-    priceText: "Rp 49.000",
-    priceVal: 49000,
+
+
     desc: "Gunting model anak perempuan oval, bob imut, atau layer."
   },
   {
@@ -51,8 +51,8 @@ const SALON_SERVICES = [
     category: "hair",
     categoryName: "Hair Cut & Styling",
     name: "Women's Haircut (Rata / Oval)",
-    priceText: "Rp 49.000",
-    priceVal: 49000,
+
+
     popular: true,
     desc: "Potongan rambut wanita model rata klasik atau oval cantik."
   },
@@ -61,9 +61,9 @@ const SALON_SERVICES = [
     category: "hair",
     categoryName: "Hair Cut & Styling",
     name: "Hair Trimming",
-    priceText: "Rp 49.000 - 59.000",
-    priceVal: 49000,
-    maxVal: 59000,
+
+
+
     desc: "Rapikan ujung rambut bercabang agar sehat dan bertumbuh lebat."
   },
   {
@@ -71,8 +71,8 @@ const SALON_SERVICES = [
     category: "hair",
     categoryName: "Hair Cut & Styling",
     name: "Haircut Butterfly / French Layer",
-    priceText: "Rp 69.000",
-    priceVal: 69000,
+
+
     popular: true,
     badge: "Trending 🔥",
     desc: "Potongan ber-layer bervolume ala selebgram yang anggun dan flowy."
@@ -82,9 +82,9 @@ const SALON_SERVICES = [
     category: "hair",
     categoryName: "Hair Cut & Styling",
     name: "Hairwash",
-    priceText: "Rp 15.000 - 49.000",
-    priceVal: 15000,
-    maxVal: 49000,
+
+
+
     desc: "Keramas bersih tuntas dengan pijatan ringan menyegarkan kepala."
   },
   {
@@ -92,9 +92,9 @@ const SALON_SERVICES = [
     category: "hair",
     categoryName: "Hair Cut & Styling",
     name: "Catok (Short, Medium)",
-    priceText: "Rp 49.000 - 57.000",
-    priceVal: 49000,
-    maxVal: 57000,
+
+
+
     desc: "Styling catok lurus halus berkilau untuk rambut pendek hingga sedang."
   },
   {
@@ -102,9 +102,9 @@ const SALON_SERVICES = [
     category: "hair",
     categoryName: "Hair Cut & Styling",
     name: "Catok Long",
-    priceText: "Rp 59.000 - 69.000",
-    priceVal: 59000,
-    maxVal: 69000,
+
+
+
     desc: "Styling catok rapi & tahan seharian untuk rambut panjang."
   },
   {
@@ -112,9 +112,9 @@ const SALON_SERVICES = [
     category: "hair",
     categoryName: "Hair Cut & Styling",
     name: "Curly Styling",
-    priceText: "Rp 59.000 - 79.000",
-    priceVal: 59000,
-    maxVal: 79000,
+
+
+
     desc: "Keriting gantung atau gelombang anggun untuk acara & photoshoot."
   },
   {
@@ -122,9 +122,9 @@ const SALON_SERVICES = [
     category: "hair",
     categoryName: "Hair Cut & Styling",
     name: "Blow In",
-    priceText: "Rp 49.000 - 69.000",
-    priceVal: 49000,
-    maxVal: 69000,
+
+
+
     desc: "Blow masuk ke dalam membuat tampilan rambut fresh dan rapi."
   },
   {
@@ -132,8 +132,8 @@ const SALON_SERVICES = [
     category: "hair",
     categoryName: "Hair Cut & Styling",
     name: "Blow Out / Variasi",
-    priceText: "Rp 79.000",
-    priceVal: 79000,
+
+
     desc: "Blow mengembang bervolume maksimal untuk rambut tampak tebal memukau."
   },
 
@@ -143,9 +143,9 @@ const SALON_SERVICES = [
     category: "treatment",
     categoryName: "Hair Treatment",
     name: "Creambath Tradisional (Alpukat/Ginseng/Lidah Buaya)",
-    priceText: "Rp 49.000 - 69.000",
-    priceVal: 49000,
-    maxVal: 69000,
+
+
+
     popular: true,
     desc: "Pijatan leher & kepala rileks dengan ekstrak alami penyubur rambut."
   },
@@ -154,8 +154,8 @@ const SALON_SERVICES = [
     category: "treatment",
     categoryName: "Hair Treatment",
     name: "Creambath Milk",
-    priceText: "Rp 69.000",
-    priceVal: 69000,
+
+
     desc: "Nutrisi protein susu melembutkan helai rambut kering dan kusam."
   },
   {
@@ -163,8 +163,8 @@ const SALON_SERVICES = [
     category: "treatment",
     categoryName: "Hair Treatment",
     name: "Creambath MAKARIZO (Coklat / Berry / Vanilla / Mint)",
-    priceText: "Rp 79.000",
-    priceVal: 79000,
+
+
     popular: true,
     badge: "Favorit 🌸",
     desc: "Sensasi wangi aromaterapi mewah & nutrisi intensif dari Makarizo."
@@ -174,8 +174,8 @@ const SALON_SERVICES = [
     category: "treatment",
     categoryName: "Hair Treatment",
     name: "Hairspa Anti Dandruff",
-    priceText: "Rp 85.000",
-    priceVal: 85000,
+
+
     desc: "Formula cooling basmi ketombe, redakan gatal, dan segarkan kulit kepala."
   },
   {
@@ -183,8 +183,8 @@ const SALON_SERVICES = [
     category: "treatment",
     categoryName: "Hair Treatment",
     name: "Hairmask Deep Repair",
-    priceText: "Rp 89.000",
-    priceVal: 89000,
+
+
     desc: "Masker pemulih serat rambut yang rapuh akibat paparan panas."
   },
   {
@@ -192,8 +192,8 @@ const SALON_SERVICES = [
     category: "treatment",
     categoryName: "Hair Treatment",
     name: "Hairmask Color Lock",
-    priceText: "Rp 90.000",
-    priceVal: 90000,
+
+
     desc: "Kunci kilau warna rambut agar tahan lama dan tidak mudah pudar."
   },
   {
@@ -201,8 +201,8 @@ const SALON_SERVICES = [
     category: "treatment",
     categoryName: "Hair Treatment",
     name: "Hairspa L'ORÉAL Professional",
-    priceText: "Rp 89.000",
-    priceVal: 89000,
+
+
     popular: true,
     desc: "Perawatan salon kelas dunia dengan formula hidrasi mendalam L'Oréal."
   },
@@ -211,8 +211,8 @@ const SALON_SERVICES = [
     category: "treatment",
     categoryName: "Hair Treatment",
     name: "Hairmask Keratin Booster",
-    priceText: "Rp 89.000",
-    priceVal: 89000,
+
+
     badge: "Best Seller ✨",
     desc: "Injeksi keratin mikro mengembalikan kelenturan rambut elastis & lembut."
   },
@@ -221,9 +221,9 @@ const SALON_SERVICES = [
     category: "treatment",
     categoryName: "Hair Treatment",
     name: "Hair Serum Application",
-    priceText: "Rp 25.000 - 49.000",
-    priceVal: 25000,
-    maxVal: 49000,
+
+
+
     desc: "Serum vitamin konsentrat tinggi pelindung kutikula rambut."
   },
   {
@@ -231,9 +231,9 @@ const SALON_SERVICES = [
     category: "treatment",
     categoryName: "Hair Treatment",
     name: "Hair Tonic Herbal",
-    priceText: "Rp 25.000 - 30.000",
-    priceVal: 25000,
-    maxVal: 30000,
+
+
+
     desc: "Tonik penyegar akar merangsang pertumbuhan rambut baru."
   },
   {
@@ -241,8 +241,8 @@ const SALON_SERVICES = [
     category: "treatment",
     categoryName: "Hair Treatment",
     name: "Hair Scrub Detox Kulit Kepala",
-    priceText: "Rp 49.000",
-    priceVal: 49000,
+
+
     desc: "Eksfoliasi lembut angkat sisa minyak, debu, & residu hair styling."
   },
 
@@ -252,9 +252,9 @@ const SALON_SERVICES = [
     category: "straightening",
     categoryName: "Straightening & Keratin",
     name: "Smoothing Matrix",
-    priceText: "Rp 295.000 - 490.000",
-    priceVal: 295000,
-    maxVal: 490000,
+
+
+
     popular: true,
     desc: "Lurus natural dan rapi jatuh dengan teknologi Matrix Opti.Smooth."
   },
@@ -263,9 +263,9 @@ const SALON_SERVICES = [
     category: "straightening",
     categoryName: "Straightening & Keratin",
     name: "Smoothing Diamond",
-    priceText: "Rp 349.000 - 590.000",
-    priceVal: 349000,
-    maxVal: 590000,
+
+
+
     desc: "Formula ekstra kilau bagai berlian, lembut saat disentuh."
   },
   {
@@ -273,9 +273,9 @@ const SALON_SERVICES = [
     category: "straightening",
     categoryName: "Straightening & Keratin",
     name: "Smoothing Collagen",
-    priceText: "Rp 369.000 - 690.000",
-    priceVal: 369000,
-    maxVal: 690000,
+
+
+
     badge: "Favorit 🌟",
     desc: "Smoothing diperkaya kolagen agar rambut tetap kenyal dan tidak kaku."
   },
@@ -284,9 +284,9 @@ const SALON_SERVICES = [
     category: "straightening",
     categoryName: "Straightening & Keratin",
     name: "Keratin Smoothing (Glass Hair Effect)",
-    priceText: "Rp 439.000 - 890.000",
-    priceVal: 439000,
-    maxVal: 890000,
+
+
+
     popular: true,
     badge: "Signature ⭐",
     desc: "Efek rambut kaca super lurus berkilau tanpa merusak kutikula asli."
@@ -296,9 +296,9 @@ const SALON_SERVICES = [
     category: "straightening",
     categoryName: "Straightening & Keratin",
     name: "Keratin Filler",
-    priceText: "Rp 390.000 - 790.000",
-    priceVal: 390000,
-    maxVal: 790000,
+
+
+
     desc: "Mengisi celah rambut rapuh/berpori agar kembali tebal dan teratur."
   },
   {
@@ -306,9 +306,9 @@ const SALON_SERVICES = [
     category: "straightening",
     categoryName: "Straightening & Keratin",
     name: "Keratin Filler Therapy",
-    priceText: "Rp 390.000 - 890.000",
-    priceVal: 390000,
-    maxVal: 890000,
+
+
+
     desc: "Terapi intensif pemulihan rambut bercabang, kering, dan ngembang."
   },
   {
@@ -316,9 +316,9 @@ const SALON_SERVICES = [
     category: "straightening",
     categoryName: "Straightening & Keratin",
     name: "Keratin Treatment Deep Moisture",
-    priceText: "Rp 449.000 - 890.000",
-    priceVal: 449000,
-    maxVal: 890000,
+
+
+
     desc: "Perawatan keratin lengkap untuk kelembutan maksimal hingga berbulan-bulan."
   },
 
@@ -328,9 +328,9 @@ const SALON_SERVICES = [
     category: "coloring",
     categoryName: "Hair Coloring",
     name: "Hair Toning",
-    priceText: "Rp 149.000 - 399.000",
-    priceVal: 149000,
-    maxVal: 399000,
+
+
+
     desc: "Netralkan warna kuning/kusam dan segarkan kembali rona warna rambutmu."
   },
   {
@@ -338,9 +338,9 @@ const SALON_SERVICES = [
     category: "coloring",
     categoryName: "Hair Coloring",
     name: "Peek A Boo / Hidden Color",
-    priceText: "Rp 170.000 - 490.000",
-    priceVal: 170000,
-    maxVal: 490000,
+
+
+
     popular: true,
     badge: "Trendy 💜",
     desc: "Warna tersembunyi di lapisan dalam rambut yang estetik saat dikuncir."
@@ -350,9 +350,9 @@ const SALON_SERVICES = [
     category: "coloring",
     categoryName: "Hair Coloring",
     name: "Highlight Rambut",
-    priceText: "Rp 250.000 - 459.000",
-    priceVal: 250000,
-    maxVal: 459000,
+
+
+
     desc: "Aksen garis helai terang memberi dimensi rambut bertekstur modis."
   },
   {
@@ -360,9 +360,9 @@ const SALON_SERVICES = [
     category: "coloring",
     categoryName: "Hair Coloring",
     name: "Bleaching Aman",
-    priceText: "Rp 250.000 - 490.000",
-    priceVal: 250000,
-    maxVal: 490000,
+
+
+
     desc: "Teknik bleaching terkontrol dengan formula pelindung kutikula."
   },
   {
@@ -370,9 +370,9 @@ const SALON_SERVICES = [
     category: "coloring",
     categoryName: "Hair Coloring",
     name: "Balayage / Highlight Mix",
-    priceText: "Rp 270.000 - 490.000",
-    priceVal: 270000,
-    maxVal: 490000,
+
+
+
     popular: true,
     desc: "Gradasi warna halus menyatu alami seperti sapuan kuas para ahli."
   },
@@ -381,9 +381,9 @@ const SALON_SERVICES = [
     category: "coloring",
     categoryName: "Hair Coloring",
     name: "Full Head Fashion Color",
-    priceText: "Rp 290.000 - 490.000",
-    priceVal: 290000,
-    maxVal: 490000,
+
+
+
     desc: "Pilihan warna kekinian (Ash Grey, Lavender, Milk Tea, Rose Gold)."
   },
   {
@@ -391,9 +391,9 @@ const SALON_SERVICES = [
     category: "coloring",
     categoryName: "Hair Coloring",
     name: "Basic Color (Hitam / Coklat Natural)",
-    priceText: "Rp 290.000 - 690.000",
-    priceVal: 290000,
-    maxVal: 690000,
+
+
+
     desc: "Pewarnaan merata seluruh kepala untuk tutup uban atau warna natural."
   },
   {
@@ -401,8 +401,8 @@ const SALON_SERVICES = [
     category: "coloring",
     categoryName: "Hair Coloring",
     name: "Extra Olaplex Protection",
-    priceText: "Rp 75.000",
-    priceVal: 75000,
+
+
     badge: "Anti Rusak 🛡️",
     desc: "Tambahan Olaplex asli untuk cegah rambut patah saat proses kimia."
   },
@@ -411,8 +411,8 @@ const SALON_SERVICES = [
     category: "coloring",
     categoryName: "Hair Coloring",
     name: "Extra Smartplex Bond Multiplier",
-    priceText: "Rp 75.000",
-    priceVal: 75000,
+
+
     desc: "Lindungi ikatan rambut agar tetap kuat dan lembut setelah diwarnai."
   },
 
@@ -422,9 +422,9 @@ const SALON_SERVICES = [
     category: "wave",
     categoryName: "Wave Permanent & Perm",
     name: "Wave Permanent (Korean Wave)",
-    priceText: "Rp 200.000 - 500.000",
-    priceVal: 200000,
-    maxVal: 500000,
+
+
+
     popular: true,
     desc: "Ikal permanen anggun natural ala artis Korea, mudah diatur sehari-hari."
   },
@@ -433,8 +433,8 @@ const SALON_SERVICES = [
     category: "wave",
     categoryName: "Wave Permanent & Perm",
     name: "Down Perm",
-    priceText: "Rp 149.000",
-    priceVal: 149000,
+
+
     desc: "Luruskan rambut bagian samping/belakang yang sering jegrik/mekar."
   },
 
@@ -444,9 +444,9 @@ const SALON_SERVICES = [
     category: "extension",
     categoryName: "Hair Extension",
     name: "Hair Extension (Per Helai)",
-    priceText: "Rp 7.000 - 10.000",
-    priceVal: 7000,
-    maxVal: 10000,
+
+
+
     desc: "Sambung rambut helai premium asli lembut dan menyatu sempurna."
   },
   {
@@ -454,8 +454,8 @@ const SALON_SERVICES = [
     category: "extension",
     categoryName: "Hair Extension",
     name: "Pasang Extension Ring",
-    priceText: "Rp 490.000",
-    priceVal: 490000,
+
+
     desc: "Jasa pasang sambung rambut teknik ring rapi & nyaman."
   },
   {
@@ -463,8 +463,8 @@ const SALON_SERVICES = [
     category: "extension",
     categoryName: "Hair Extension",
     name: "Pasang Extension Kepang",
-    priceText: "Rp 690.000",
-    priceVal: 690000,
+
+
     desc: "Pemasangan sambung teknik kepang kuat dan tahan lama."
   },
   {
@@ -472,9 +472,9 @@ const SALON_SERVICES = [
     category: "extension",
     categoryName: "Hair Extension",
     name: "Remove Hair Extension (Per Helai)",
-    priceText: "Rp 2.000 - 4.000",
-    priceVal: 2000,
-    maxVal: 4000,
+
+
+
     desc: "Pelepasan sambung rambut hati-hati tanpa merusak rambut asli."
   },
 
@@ -484,8 +484,8 @@ const SALON_SERVICES = [
     category: "nail",
     categoryName: "Nail Care",
     name: "Manicure Express",
-    priceText: "Rp 39.000",
-    priceVal: 39000,
+
+
     desc: "Potong, bentuk kuku rapi, dan bersihkan kutikula secara cepat."
   },
   {
@@ -493,8 +493,8 @@ const SALON_SERVICES = [
     category: "nail",
     categoryName: "Nail Care",
     name: "Manicure Regular",
-    priceText: "Rp 69.000",
-    priceVal: 69000,
+
+
     desc: "Perawatan tangan & kuku menyeluruh dengan rendaman hangat dan vitamin."
   },
   {
@@ -502,8 +502,8 @@ const SALON_SERVICES = [
     category: "nail",
     categoryName: "Nail Care",
     name: "Manicure Spa (Scrub + Garam Spa)",
-    priceText: "Rp 79.000",
-    priceVal: 79000,
+
+
     popular: true,
     desc: "Sensasi spa garam aromaterapi & scrub halus untuk tangan lembut halus."
   },
@@ -512,8 +512,8 @@ const SALON_SERVICES = [
     category: "nail",
     categoryName: "Nail Care",
     name: "Pedicure Regular",
-    priceText: "Rp 79.000",
-    priceVal: 79000,
+
+
     desc: "Bersihkan kuku kaki, hilangkan kulit mati telapak, bersih bersinar."
   },
   {
@@ -521,8 +521,8 @@ const SALON_SERVICES = [
     category: "nail",
     categoryName: "Nail Care",
     name: "Pedicure Spa (Scrub + Garam Spa)",
-    priceText: "Rp 89.000",
-    priceVal: 89000,
+
+
     popular: true,
     desc: "Relaksasi rendaman garam spa dan scrub kaki lembut bebas bau & pegal."
   },
@@ -531,8 +531,8 @@ const SALON_SERVICES = [
     category: "nail",
     categoryName: "Nail Care",
     name: "Gel Polish Kuku",
-    priceText: "Rp 99.000",
-    priceVal: 99000,
+
+
     desc: "Cat kuku gel awet hingga berminggu-minggu, mengkilap tahan gores."
   },
   {
@@ -540,9 +540,9 @@ const SALON_SERVICES = [
     category: "nail",
     categoryName: "Nail Care",
     name: "Nail Art Cantik (Per Jari)",
-    priceText: "Rp 3.000 - 20.000",
-    priceVal: 3000,
-    maxVal: 20000,
+
+
+
     desc: "Kreasi gambar, glitter, gradasi, atau hiasan cantik di kuku."
   },
   {
@@ -550,9 +550,9 @@ const SALON_SERVICES = [
     category: "nail",
     categoryName: "Nail Care",
     name: "Nail Polish Remove",
-    priceText: "Rp 5.000 - 15.000",
-    priceVal: 5000,
-    maxVal: 15000,
+
+
+
     desc: "Hapus kutek biasa atau kutek gel dengan larutan ramah kuku."
   },
 
@@ -562,8 +562,8 @@ const SALON_SERVICES = [
     category: "face",
     categoryName: "Face & Eye Care",
     name: "Therapy Relaksasi Mata",
-    priceText: "Rp 35.000",
-    priceVal: 35000,
+
+
     desc: "Redakan mata lelah, mata panda, dan tegang akibat layar handphone."
   },
   {
@@ -571,8 +571,8 @@ const SALON_SERVICES = [
     category: "face",
     categoryName: "Face & Eye Care",
     name: "Face Cleansing, Scrub & Face Mask",
-    priceText: "Rp 89.000",
-    priceVal: 89000,
+
+
     popular: true,
     desc: "Pembersihan pori-pori wajah, angkat komedo, dan masker segar."
   },
@@ -581,8 +581,8 @@ const SALON_SERVICES = [
     category: "face",
     categoryName: "Face & Eye Care",
     name: "Extra Masker Vitamin C",
-    priceText: "Rp 25.000",
-    priceVal: 25000,
+
+
     desc: "Mencerahkan kulit kusam seketika dan kaya antioksidan."
   },
   {
@@ -590,8 +590,8 @@ const SALON_SERVICES = [
     category: "face",
     categoryName: "Face & Eye Care",
     name: "Extra Masker Anti Aging",
-    priceText: "Rp 27.000",
-    priceVal: 27000,
+
+
     desc: "Kencangkan elastisitas kulit dan samarkan garis halus."
   },
   {
@@ -599,8 +599,8 @@ const SALON_SERVICES = [
     category: "face",
     categoryName: "Face & Eye Care",
     name: "Extra Eye Mask Soothing",
-    priceText: "Rp 35.000",
-    priceVal: 35000,
+
+
     desc: "Sensasi dingin sejuk mengempiskan kantung mata bengkak."
   },
   {
@@ -608,9 +608,9 @@ const SALON_SERVICES = [
     category: "face",
     categoryName: "Face & Eye Care",
     name: "Brow Shaping (Bentuk Alis)",
-    priceText: "Rp 25.000 - 30.000",
-    priceVal: 25000,
-    maxVal: 30000,
+
+
+
     desc: "Rapikan alis presisi sesuai bentuk proporsi wajahmu."
   },
 
@@ -620,8 +620,8 @@ const SALON_SERVICES = [
     category: "spa",
     categoryName: "Body Spa & Reflexy",
     name: "Back Massage (Pijat Punggung)",
-    priceText: "Rp 59.000",
-    priceVal: 59000,
+
+
     popular: true,
     desc: "Redakan pegal di punggung, bahu, dan pinggang setelah seharian bekerja."
   },
@@ -630,8 +630,8 @@ const SALON_SERVICES = [
     category: "spa",
     categoryName: "Body Spa & Reflexy",
     name: "Kerik Tradisional Hangat",
-    priceText: "Rp 69.000",
-    priceVal: 69000,
+
+
     desc: "Terapi masuk angin tradisional yang ampuh dengan minyak hangat aroma terapi."
   },
   {
@@ -639,8 +639,8 @@ const SALON_SERVICES = [
     category: "spa",
     categoryName: "Body Spa & Reflexy",
     name: "Foot Spa Relaksasi",
-    priceText: "Rp 99.000",
-    priceVal: 99000,
+
+
     desc: "Rendam kaki air hangat, scrub rempah, dan pijatan ringan telapak kaki."
   },
   {
@@ -648,8 +648,8 @@ const SALON_SERVICES = [
     category: "spa",
     categoryName: "Body Spa & Reflexy",
     name: "Foot Spa Complete Treatment",
-    priceText: "Rp 149.000",
-    priceVal: 149000,
+
+
     popular: true,
     badge: "Paling Nyaman 💆‍♀️",
     desc: "Paket lengkap foot spa, scrub garam, masker kaki & pijat refleksi mendalam."
@@ -659,8 +659,8 @@ const SALON_SERVICES = [
     category: "spa",
     categoryName: "Body Spa & Reflexy",
     name: "Reflexy Kaki & Titik Syaraf",
-    priceText: "Rp 99.000",
-    priceVal: 99000,
+
+
     desc: "Pijatan tepat pada titik syaraf kaki untuk lancarkan peredaran darah."
   },
   {
@@ -668,8 +668,8 @@ const SALON_SERVICES = [
     category: "spa",
     categoryName: "Body Spa & Reflexy",
     name: "Reflexy Full Body Massage",
-    priceText: "Rp 189.000",
-    priceVal: 189000,
+
+
     popular: true,
     badge: "Super Rileks 🌸",
     desc: "Pijat relaksasi seluruh tubuh dari ujung kepala hingga kaki, bebas pegal."
@@ -679,9 +679,9 @@ const SALON_SERVICES = [
     category: "spa",
     categoryName: "Body Spa & Reflexy",
     name: "Body Scrub Alami",
-    priceText: "Rp 30.000 - 69.000",
-    priceVal: 30000,
-    maxVal: 69000,
+
+
+
     desc: "Lulur scrub angkat daki kulit mati, kulit jadi cerah dan wangi semerbak."
   },
   {
@@ -689,9 +689,9 @@ const SALON_SERVICES = [
     category: "spa",
     categoryName: "Body Spa & Reflexy",
     name: "Body Mask Nutrisi",
-    priceText: "Rp 29.000 - 49.000",
-    priceVal: 29000,
-    maxVal: 49000,
+
+
+
     desc: "Baluran masker tubuh mengencangkan dan melembapkan kulit secara mendalam."
   },
 
@@ -701,9 +701,9 @@ const SALON_SERVICES = [
     category: "makeup",
     categoryName: "Make Up & Styling",
     name: "Make Up (Natural / Party / Wisuda)",
-    priceText: "Rp 150.000 - 449.000",
-    priceVal: 150000,
-    maxVal: 449000,
+
+
+
     popular: true,
     desc: "Riasan flawless tahan lama, glowing, dan menyesuaikan tema acara."
   },
@@ -712,9 +712,9 @@ const SALON_SERVICES = [
     category: "makeup",
     categoryName: "Make Up & Styling",
     name: "Hairdo Elegan",
-    priceText: "Rp 90.000 - 145.000",
-    priceVal: 90000,
-    maxVal: 145000,
+
+
+
     desc: "Sanggul modern, kepang artistic, atau updo anggun untuk pesta."
   },
   {
@@ -722,9 +722,9 @@ const SALON_SERVICES = [
     category: "makeup",
     categoryName: "Make Up & Styling",
     name: "Event Hair Styling",
-    priceText: "Rp 85.000 - 100.000",
-    priceVal: 85000,
-    maxVal: 100000,
+
+
+
     desc: "Penataan gaya rambut cepat dan stay sepanjang acara pentingmu."
   }
 ];
@@ -734,10 +734,6 @@ let selectedServices = new Map(); // id -> service object
 let activeCategory = "all";
 let searchQuery = "";
 
-// Format Rupiah
-function formatRupiah(number) {
-  return "Rp " + number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
-}
 
 // FORMAT TANGGAL INDONESIA
 function formatTanggalIndo(dateStr) {
@@ -775,8 +771,8 @@ function updateSalonStatus() {
   }
 }
 
-// RENDER PRICELIST TABLE & BOOKING SELECTION
-function renderPricelist() {
+// RENDER SERVICE LIST & BOOKING SELECTION
+function renderServices() {
   const container = document.getElementById("pricelist-items-container");
   if (!container) return;
 
@@ -818,10 +814,7 @@ function renderPricelist() {
         <h4 class="service-title">${service.name}</h4>
         <p class="service-desc">${service.desc}</p>
         <div class="service-card-footer">
-          <div class="service-price">
-            <span class="price-label">Tarif Referensi:</span>
-            <span class="price-val">${service.priceText}</span>
-          </div>
+          
           <button type="button" class="btn-select-service ${isSelected ? 'btn-remove' : ''}" onclick="event.stopPropagation(); toggleServiceSelection('${service.id}')">
             ${isSelected ? '✓ Terpilih' : '+ Pilih Layanan'}
           </button>
@@ -845,7 +838,7 @@ function toggleServiceSelection(serviceId) {
   }
 
   updateBookingUI();
-  renderPricelist();
+  renderServices();
 }
 
 // HAPUS DARI KERANJANG
@@ -855,7 +848,7 @@ function removeSelectedService(serviceId) {
     selectedServices.delete(serviceId);
     showToast(`Dihapus: ${service.name}`);
     updateBookingUI();
-    renderPricelist();
+    renderServices();
   }
 }
 
@@ -886,24 +879,14 @@ function updateBookingUI() {
     return;
   }
 
-  let minTotal = 0;
-  let maxTotal = 0;
-  let hasRange = false;
 
   const itemsHtml = [];
   selectedServices.forEach(service => {
-    minTotal += service.priceVal;
-    if (service.maxVal) {
-      maxTotal += service.maxVal;
-      hasRange = true;
-    } else {
-      maxTotal += service.priceVal;
-    }
 
     itemsHtml.push(`
       <div class="selected-chip">
         <span class="chip-name">${service.name}</span>
-        <span class="chip-price">Ref: ${service.priceText}</span>
+
         <button type="button" class="chip-remove-btn" title="Hapus layanan" onclick="removeSelectedService('${service.id}')">✕</button>
       </div>
     `);
@@ -917,20 +900,18 @@ function updateBookingUI() {
     `;
   }
 
-  const formattedTotal = hasRange 
-    ? `${formatRupiah(minTotal)} - ${formatRupiah(maxTotal)}`
-    : `${formatRupiah(minTotal)}`;
+ 
+
+
 
   if (totalDisplay) {
     totalDisplay.innerHTML = `
-      <div style="font-size: 1.05rem; color: #065F46; font-weight: 800;">${formattedTotal}</div>
-      <div style="font-size: 0.74rem; color: #B45309; font-weight: 600; margin-top: 2px;">
-        💡 Patokan referensi (dicek langsung oleh stylist)
-      </div>
+      <span style="font-size: 0.95rem; color: #065F46; font-weight: 700;">Harga diestimasi stylist/admin sesuai panjang dan ketebalan rambut, konsultasi via WhatsApp 0812 1418 4546.</span>
+
     `;
   }
   if (floatingCount) floatingCount.textContent = `${count} Layanan Diminati`;
-  if (floatingTotal) floatingTotal.textContent = `Cek Harga & Jadwal via WA 💬`;
+  if (floatingTotal) floatingTotal.textContent = `Konsultasi & Jadwal via WA 💬`;
   if (floatingBar) floatingBar.classList.add("visible");
   if (stepOneIndicator) stepOneIndicator.textContent = `✓ ${count} Layanan Diminati`;
 }
@@ -940,7 +921,7 @@ function resetSearch() {
   searchQuery = "";
   const searchInput = document.getElementById("search-service-input");
   if (searchInput) searchInput.value = "";
-  renderPricelist();
+  renderServices();
 }
 
 // INISIALISASI TANGGAL & JAM PICKER
@@ -1012,26 +993,16 @@ function generateBookingMessage() {
 
   // Susun Layanan
   let servicesListText = "";
-  let minTotal = 0;
-  let maxTotal = 0;
-  let hasRange = false;
   let idx = 1;
 
   selectedServices.forEach(service => {
-    servicesListText += `${idx}. ${service.name} (Ref: ${service.priceText})\n`;
-    minTotal += service.priceVal;
-    if (service.maxVal) {
-      maxTotal += service.maxVal;
-      hasRange = true;
-    } else {
-      maxTotal += service.priceVal;
-    }
+    servicesListText += `${idx}. ${service.name}\n`;
     idx++;
   });
 
-  const formattedTotal = hasRange 
-    ? `${formatRupiah(minTotal)} - ${formatRupiah(maxTotal)}`
-    : `${formatRupiah(minTotal)}`;
+ 
+
+
 
   const tanggalFormatted = formatTanggalIndo(dateVal);
 
@@ -1041,7 +1012,7 @@ function generateBookingMessage() {
     `📅 *Rencana Kedatangan:* ${tanggalFormatted}\n` +
     `⏰ *Rencana Jam:* ${timeVal} WIB\n\n` +
     `💇‍♀️ *Layanan yang Diminati:*\n${servicesListText}\n` +
-    `💰 *Kisaran Tarif Referensi:* ${formattedTotal}\n` +
+    `💰 Harga diestimasi setelah konsultasi via WhatsApp.\n` +
     `ℹ️ _(Saya memahami harga pasti akan dicek dan disesuaikan langsung dengan panjang & ketebalan rambut di salon/via WA)_\n\n` +
     (notes ? `📝 *Kondisi Rambut & Catatan:* ${notes}\n\n` : "") +
     `Mohon info ketersediaan slot jadwal dan konfirmasi estimasi harganya ya Kak. (Saya juga bisa kirim foto rambut jika diperlukan). Terima kasih! ✨`;
@@ -1135,22 +1106,6 @@ function showToast(msg, type = "info") {
   }, 2800);
 }
 
-// MODAL FOTO PRICELIST ASLI
-function openPricelistModal() {
-  const modal = document.getElementById("pricelist-modal");
-  if (modal) {
-    modal.classList.add("active");
-    document.body.style.overflow = "hidden";
-  }
-}
-
-function closePricelistModal() {
-  const modal = document.getElementById("pricelist-modal");
-  if (modal) {
-    modal.classList.remove("active");
-    document.body.style.overflow = "";
-  }
-}
 
 // EVENT LISTENERS INITIALIZATION
 document.addEventListener("DOMContentLoaded", () => {
@@ -1158,8 +1113,8 @@ document.addEventListener("DOMContentLoaded", () => {
   updateSalonStatus();
   setInterval(updateSalonStatus, 60000);
 
-  // Render Pricelist Awal
-  renderPricelist();
+  // Render Daftar Layanan Awal
+  renderServices();
 
   // Inisialisasi Date & Time Pickers
   initDateTimePickers();
@@ -1169,7 +1124,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if (searchInput) {
     searchInput.addEventListener("input", (e) => {
       searchQuery = e.target.value.trim();
-      renderPricelist();
+      renderServices();
     });
   }
 
@@ -1180,7 +1135,7 @@ document.addEventListener("DOMContentLoaded", () => {
       tabButtons.forEach(b => b.classList.remove("active"));
       btn.classList.add("active");
       activeCategory = btn.getAttribute("data-cat") || "all";
-      renderPricelist();
+      renderServices();
     });
   });
 
@@ -1213,14 +1168,5 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // Modal Backdrop Click
-  const modal = document.getElementById("pricelist-modal");
-  if (modal) {
-    modal.addEventListener("click", (e) => {
-      if (e.target === modal) {
-        closePricelistModal();
-      }
-    });
-  }
 
 });
